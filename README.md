@@ -11,8 +11,8 @@
 
 Страницы проекта:
 
-* [Авторизация](https://savallera.github.io/auth/)
-* [Восстановление пароля](https://savallera.github.io/resume/)
+* [Авторизация](https://savallera.github.io/database-of-objects/auth.html)
+* [Восстановление пароля](https://savallera.github.io/database-of-objects/resume.html)
 
 
 Команды
