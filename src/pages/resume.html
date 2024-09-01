@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Восстановление пароля"})
+  <body>
+    <div class="page">
+      <main class="page__content auth">
+        <section class="auth__section">
+          <form class="auth__form" name="auth-form" action="">
+            <a href="./" class="auth__logo-link" rel="ugs">
+              <img src="./images/logo.svg" class="auth__logo" alt="Логотип департамента спорта города Москвы"/>
+            </a>
+            <h1 class="page__heading page__heading--place-auth">
+              База данных <br />
+              об объектах
+            </h1>
+            <h2 class="auth__heading">Восстановление пароля</h2>
+            <div class="field field--size-lg auth__field">
+              <label for="auth-email" class="field__label"
+                >Электронная почта</label
+              >
+              <div class="field__inner">
+                <input
+                  type="email"
+                  class="field__input"
+                  autocomplete="email"
+                  name="email"
+                  id="auth-email"
+                />
+                <span class="field__error-text">Вывод ошибки</span>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="button button--theme-main button--size-lg"
+            >
+              <span class="button__text">Восстановить пароль</span>
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>

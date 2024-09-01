@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="ru">
-  @@include("../blocks/head/head.html", {"title": "Главная"})
+  @@include("../blocks/head/head.html", {"title": "Авторизация"})
   <body>
     <div class="page">
       <main class="page__content auth">
         <section class="auth__section">
           <form class="auth__form" name="auth-form" action="">
-            <img src="./images/logo.svg" class="auth__logo" alt="Логотип департамента спорта города Москвы"/>
+            <a href="./" class="auth__logo-link" rel="ugs">
+              <img src="./images/logo.svg" class="auth__logo" alt="Логотип департамента спорта города Москвы"/>
+            </a>
             <h1 class="page__heading page__heading--place-auth">
               База данных <br> об объектах
             </h1>

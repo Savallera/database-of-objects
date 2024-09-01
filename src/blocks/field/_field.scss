@@ -2,8 +2,10 @@
   &__label {
     display: inline-block;
     padding-block-end: 0.5em;
-    font-size: 1.25em;
     font-variation-settings: 'wght' 700;
+    @include media(xl) {
+      font-size: 1.25em;
+    }
   }
 
   &__inner {
@@ -11,8 +13,9 @@
   }
 
   &__input {
+    @extend %reset-input;
     grid-area: 1/1/2/2;
-    padding: 1.5em 0.625rem;
+    padding: 1em 0.625rem;
     font-size: inherit;
     font-variation-settings: 'wght' 400;
     background-color: #fff;
@@ -51,36 +54,21 @@
     grid-area: 1/1/2/2;
   }
 
-  &__error-icon {
-    display: block;
-    @include box(1.5em);
-    color: var(--error-color, #f14242);
-    grid-area: 1/1/2/2;
-
-    align-self: start;
-    justify-self: end;
-    margin-block-start: 0.875rem;
-    margin-inline-end: 0.625rem;
-
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    transition:
-      visibility 0s 0.35s,
-      opacity 0.35s;
-  }
-
   &--size-lg {
     .field__input {
-      font-size: 1.875em;
-      padding: 1rem 0.625rem;
+      font-size: 1.25em;
+      padding-block: 0.75em;
+
+      @include media(xl) {
+        font-size: 1.875em;
+        padding: 1rem 0.625rem;
+      }
     }
   }
 
   &--state-error {
     .field__input {
-      padding-inline-end: 3rem;
+      border-color: var(--error-color, #f14242);
     }
     .field__error-text {
       visibility: visible;
@@ -90,14 +78,6 @@
         visibility 0s,
         opacity 0.35s;
       grid-area: unset;
-    }
-    .field__error-icon {
-      visibility: visible;
-      opacity: 1;
-      pointer-events: all;
-      transition:
-        visibility 0s,
-        opacity 0.35s;
     }
   }
 }

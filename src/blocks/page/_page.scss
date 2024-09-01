@@ -3,11 +3,11 @@
   }
 
   &__heading {
-    font-size: var(--display-font-size, 2.5em);
+    font-size: var(--display-font, 2.5em);
     font-variation-settings: 'wght' 800;
     &--place-auth {
       text-transform: uppercase;
-      margin-block-end: 4rem;
+      margin-block-end: min(10%, 4rem);
     }
   }
 }

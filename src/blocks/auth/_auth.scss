@@ -1,18 +1,33 @@
 .auth {
   min-block-size: 100dvb;
   min-block-size: 100vh;
-  margin: 0 auto;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-image: url('../images/auth__image.jpg');
+  background-color: #85c3f4;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__section {
     flex: auto;
     background-color: var(--bg-color, #fff);
-    padding: 2em 20%;
-    display: flex;
-    align-items: center;
+    border-radius: var(--box-radius, 12px);
+    max-inline-size: 50em;
+    padding: clamp(1.5em, 5%, 3em) clamp(3em, 10%, 6em);
+    margin: 2em 5%;
+
+    @include media(xl) {
+      border-radius: 0;
+      margin: unset;
+      max-inline-size: unset;
+      padding-inline: clamp(5em, 15%, 10em);
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -26,19 +41,30 @@
   }
 
   &__field:first-of-type {
-    margin-block-end: 2em;
+    margin-block-end: 1em;
+    @include media(xl) {
+      margin-block-end: 2em;
+    }
   }
 
   &__logo {
-    inline-size: 14em;
+    inline-size: 10em;
+    @include media(xl) {
+      inline-size: min(40%, 15em);
+    }
   }
 
   &__form-group {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
     margin-block: 1em;
+
+    @include media(xs) {
+      flex-direction: row;
+    }
   }
 
   &__link {
@@ -54,11 +80,13 @@
   }
 
   &__button {
-    margin-block-start: 4rem;
+    margin-block-start: min(10%, 4rem);
   }
 
-  @include media(xxl) {
-    background-size: 70%;
+  @include media(xl) {
+    background-size: 75%;
+    align-items: unset;
+    justify-content: unset;
     background-position: -10% center;
     padding-inline-start: 50%;
   }

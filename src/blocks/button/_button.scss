@@ -1,11 +1,11 @@
 .button {
+  @extend %reset-btn;
   text-decoration: unset;
   text-align: center;
-  background-color: transparent;
-  border: none;
+  font-size: inherit;
   font-variation-settings: 'wght' 500;
+  padding: 1em 0.625rem;
   transition: 0.35s;
-  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -31,7 +31,11 @@
   }
 
   &--size-lg {
-    font-size: 1.875em;
-    padding: 1rem 0.625rem;
+    font-size: 1.25em;
+    padding-block: 0.75em;
+    @include media(xl) {
+      font-size: 1.875em;
+      padding: 1rem 0.625rem;
+    }
   }
 }
