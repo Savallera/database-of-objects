@@ -1,6 +1,18 @@
-### Сборка для разработки сайтов
+# Проект База данных об объектах
 ## Gulp + Webpack
-Обновлено ноя.2023г.
+Базовая верстка <br/>
+Разбивка на компоненты
+Адаптивная верстка
+
+Ссылка на макет основной макет https://www.figma.com/design/wX08p5nR9PnSNP88gWWliZ/Базовые-требования?node-id=2-33&node-type=CANVAS&t=XTl4LaRB511i68PP-0
+
+Ссылка на GH-pages https://savallera.github.io/database-of-objects/
+
+
+Страницы проекта:
+
+* [Авторизация](https://savallera.github.io/auth/)
+
 
 Команды
 
@@ -21,13 +33,3 @@ npm init
 Форматирование
 
 `npm run fixAll`
-
-Запуск отдельных задач
-
-`gulp html, gulp clear, ...`
-
----
-
-**Пакеты для установки**
-
-npm i -D @babel/core @babel/preset-env babel gh-pages browser-sync del gulp gulp-autoprefixer gulp-avif gulp-babel gulp-concat gulp-cssimport gulp-file-include gulp-fonter gulp-imagemin gulp-newer gulp-notify gulp-plumber gulp-sass gulp-svg-sprite gulp-ttf2woff2 gulp-uglify gulp-webp sass webpack-stream webpack

@@ -1,0 +1,18 @@
+.icon {
+  color: inherit;
+
+  &::before {
+    content: '';
+    background-color: currentColor;
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  &--type-error::before {
+    mask-image: url('../images/icons.svg#close');
+  }
+}

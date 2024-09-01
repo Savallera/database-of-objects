@@ -69,3 +69,8 @@ $breakpoints: (
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+@mixin box($inline, $block: $inline) {
+    inline-size: $inline;
+    block-size: $block;
+}

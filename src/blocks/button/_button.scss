@@ -1,0 +1,37 @@
+.button {
+  text-decoration: unset;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-variation-settings: 'wght' 500;
+  transition: 0.35s;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--text-color, #272b37);
+  }
+
+  &__text {
+    vertical-align: middle;
+  }
+
+  &--theme-main {
+    background-color: var(--main-color, #e22b36);
+    color: #fff;
+    border-radius: var(--box-radius, 12px);
+    inline-size: 100%;
+
+    &:hover {
+      background-color: var(--main-color-hover, #c11a24);
+    }
+  }
+
+  &--size-lg {
+    font-size: 1.875em;
+    padding: 1rem 0.625rem;
+  }
+}

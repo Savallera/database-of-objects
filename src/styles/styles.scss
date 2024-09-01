@@ -5,18 +5,19 @@
 @import './variables';
 
 // UI
-// @import '../blocks/icon/icon';
+@import '../blocks/icon/icon';
 // @import '../blocks/icon-button/icon-button';
-// @import '../blocks/button/button';
-// @import '../blocks/field/field';
+@import '../blocks/button/button';
+@import '../blocks/field/field';
+@import '../blocks/checkbox/checkbox';
 
 // layout
-// @import '../blocks/page/page';
+@import '../blocks/page/page';
 @import '../blocks/header/header';
 @import '../blocks/footer/footer';
 
 // Sections
-// @import '../blocks/not-found/not-found';
+@import '../blocks/auth/auth';
 
 // Modals
 // @import '../blocks/popup/popup';

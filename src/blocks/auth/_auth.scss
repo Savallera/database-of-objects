@@ -1,0 +1,65 @@
+.auth {
+  min-block-size: 100dvb;
+  min-block-size: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  background-image: url('../images/auth__image.jpg');
+  background-repeat: no-repeat;
+
+  &__section {
+    flex: auto;
+    background-color: var(--bg-color, #fff);
+    padding: 2em 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: var(--heading-font-xl, 2em);
+    font-variation-settings: 'wght' 700;
+    margin-block-end: 1em;
+  }
+
+  &__form {
+    inline-size: 100%;
+  }
+
+  &__field:first-of-type {
+    margin-block-end: 2em;
+  }
+
+  &__logo {
+    inline-size: 14em;
+  }
+
+  &__form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin-block: 1em;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: var(--text-font-sm, 0.875em);
+    font-variation-settings: 'wght' 500;
+    color: var(--main-color, #e22b36);
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  &__button {
+    margin-block-start: 4rem;
+  }
+
+  @include media(xxl) {
+    background-size: 70%;
+    background-position: -10% center;
+    padding-inline-start: 50%;
+  }
+}
