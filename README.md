@@ -12,6 +12,7 @@
 Страницы проекта:
 
 * [Авторизация](https://savallera.github.io/auth/)
+* [Восстановление пароля](https://savallera.github.io/resume/)
 
 
 Команды
