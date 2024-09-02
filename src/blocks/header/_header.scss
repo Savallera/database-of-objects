@@ -88,5 +88,6 @@
   @include media(lg) {
     position: static;
     border-radius: 25px;
+    box-shadow: none;
   }
 }
