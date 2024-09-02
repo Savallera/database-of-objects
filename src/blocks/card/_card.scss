@@ -1,0 +1,35 @@
+.card {
+  inline-size: 100%;
+  background-color: var(--bg-color, #fff);
+  padding: 1.5em;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  &__tag {
+    display: inline-block;
+    text-align: center;
+    padding: 0.625rem;
+    font-size: 0.875em;
+    font-variation-settings: 'wght' 800;
+    color: #fff;
+    background-color: var(--main-color, #e22b36);
+    border-radius: var(--box-radius, 12px);
+  }
+
+  &__date {
+    font-size: 0.875em;
+    color: var(--grey-200, #c2c5cb);
+  }
+
+  &__icon-button {
+    margin-inline-start: auto;
+  }
+
+  @include media(lg) {
+    border-radius: 25px;
+  }
+}

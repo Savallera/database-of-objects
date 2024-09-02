@@ -12,7 +12,85 @@
     block-size: 100%;
   }
 
+  &--type-arrow-down::before {
+    mask-image: url('../images/icons.svg#arrow-down');
+  }
+  &--type-arrow-left::before {
+    mask-image: url('../images/icons.svg#arrow-left');
+  }
+  &--type-arrow-right::before {
+    mask-image: url('../images/icons.svg#arrow-right');
+  }
+  &--type-building::before {
+    mask-image: url('../images/icons.svg#building');
+  }
+  &--type-calendar::before {
+    mask-image: url('../images/icons.svg#calendar');
+  }
+  &--type-close::before {
+    mask-image: url('../images/icons.svg#close');
+  }
+  &--type-copy::before {
+    mask-image: url('../images/icons.svg#copy');
+  }
+  &--type-document::before {
+    mask-image: url('../images/icons.svg#document');
+  }
+  &--type-drop-down::before {
+    mask-image: url('../images/icons.svg#drop-down');
+  }
+  &--type-envelope::before {
+    mask-image: url('../images/icons.svg#envelope');
+  }
   &--type-error::before {
     mask-image: url('../images/icons.svg#close');
+  }
+  &--type-exit::before {
+    mask-image: url('../images/icons.svg#exit');
+  }
+  &--type-filter::before {
+    mask-image: url('../images/icons.svg#filter');
+  }
+  &--type-image::before {
+    mask-image: url('../images/icons.svg#image');
+  }
+  &--type-info-rectangle::before {
+    mask-image: url('../images/icons.svg#info-rectangle');
+  }
+  &--type-location-in-map::before {
+    mask-image: url('../images/icons.svg#location-in-map');
+  }
+  &--type-phone::before {
+    mask-image: url('../images/icons.svg#phone');
+  }
+  &--type-rating::before {
+    mask-image: url('../images/icons.svg#rating');
+  }
+  &--type-refresh::before {
+    mask-image: url('../images/icons.svg#refresh');
+  }
+  &--type-search-in-box::before {
+    mask-image: url('../images/icons.svg#search-in-box');
+  }
+  &--type-search::before {
+    mask-image: url('../images/icons.svg#search');
+  }
+  &--type-settings::before {
+    mask-image: url('../images/icons.svg#settings');
+  }
+  &--type-sort-long::before {
+    mask-image: url('../images/icons.svg#sort-long');
+  }
+  &--type-sort::before {
+    mask-image: url('../images/icons.svg#sort');
+  }
+  &--type-structure::before {
+    mask-image: url('../images/icons.svg#structure');
+  }
+  &--type-user::before {
+    mask-image: url('../images/icons.svg#user');
+  }
+  &--type-wrench::before {
+    mask-image: url('../images/icons.svg#wrench');
   }
 }

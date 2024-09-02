@@ -37,9 +37,6 @@
   --text-font-sm: 0.875em;
 
   --box-radius: 12px;
-  --box-shadow-sm: 0 0 2px rgb(100 112 103 / 0.25);
-  --box-shadow-md: 0 0 4px rgb(100 112 103 / 0.25);
-  --box-shadow-selected: 0 0 0 4px rgba(var(--main-color-opacity), 0.5);
 
   @include media(xl) {
     --heading-font-xl: 2em;

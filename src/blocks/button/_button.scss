@@ -1,5 +1,6 @@
 .button {
   @extend %reset-btn;
+  display: inline-block;
   text-decoration: unset;
   text-align: center;
   font-size: inherit;
@@ -28,6 +29,23 @@
     &:hover {
       background-color: var(--main-color-hover, #c11a24);
     }
+  }
+
+  &--theme-grey {
+    background-color: var(--grey-200, #c2c5cb);
+    color: #fff;
+    border-radius: var(--box-radius, 12px);
+    inline-size: 100%;
+
+    &:hover {
+      background-color: var(--grey-300, #a7aab4);
+    }
+  }
+
+  &--size-sm {
+    font-size: 0.875em;
+    padding-block: 0.625em;
+    font-variation-settings: 'wght' 800;
   }
 
   &--size-lg {

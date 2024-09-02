@@ -1,0 +1,19 @@
+.icon-button {
+  @extend %reset-btn;
+  @include box(1.875em);
+  padding: 0;
+  transition: color 0.35s;
+
+  &:hover {
+    color: var(--main-color, #e22b36);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--text-color, #272b37);
+  }
+}
