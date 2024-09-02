@@ -8,12 +8,14 @@
 
 Ссылка на GH-pages https://savallera.github.io/database-of-objects/
 
-
 Страницы проекта:
 
 * [Авторизация](https://savallera.github.io/database-of-objects/auth.html)
 * [Восстановление пароля](https://savallera.github.io/database-of-objects/resume.html)
 
+Карта объекта
+
+* [Общая информация](https://savallera.github.io/database-of-objects/main-info.html)
 
 Команды
 
