@@ -5,6 +5,7 @@
 @import './variables';
 
 // UI
+@import '../blocks/preloader/preloader';
 @import '../blocks/icon/icon';
 @import '../blocks/icon-button/icon-button';
 @import '../blocks/button/button';
@@ -14,7 +15,6 @@
 // layout
 @import '../blocks/page/page';
 @import '../blocks/header/header';
-@import '../blocks/footer/footer';
 
 // Sections
 @import '../blocks/auth/auth';
