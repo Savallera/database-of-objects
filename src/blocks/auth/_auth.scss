@@ -16,9 +16,9 @@
     flex: auto;
     background-color: var(--bg-color, #fff);
     border-radius: var(--box-radius, 12px);
-    max-inline-size: 50em;
-    padding: clamp(1.5em, 5%, 3em) clamp(3em, 10%, 6em);
-    margin: 2em 5%;
+    max-inline-size: 40em;
+    padding: clamp(1.5em, 5%, 3em) clamp(2.5em, 8%, 5em);
+    margin: 1em;
 
     @include media(xl) {
       border-radius: 0;

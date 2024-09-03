@@ -1,15 +1,14 @@
 .page {
   min-block-size: 100vh;
-  display: flex;
-  gap: 1em;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 0.25em;
+  gap: 0.25em;
   background-color: var(--bg-secondary-color, #dedfe3);
 
-  &__header {
-    flex: none;
-  }
+  // &__header {}
 
   &__content {
-    flex: auto;
     display: flex;
   }
 
@@ -23,6 +22,9 @@
   }
 
   @include media(lg) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
     padding: 1em;
+    gap: 1em;
   }
 }

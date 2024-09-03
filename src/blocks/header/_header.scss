@@ -1,24 +1,47 @@
 .header {
   background-color: var(--bg-color, #fff);
-  inline-size: min(19em, 80vw);
-  padding: 1.5em;
+  border-radius: 10px;
+  padding: 0.75em;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 1em;
 
-  position: absolute;
-  inset: 0 auto 0 0;
-  border-radius: 0 25px 25px 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 
   // &__logo-link {}
 
   &__logo {
-    inline-size: 90%;
+    display: block;
+    inline-size: 7.5em;
+    @include media(lg) {
+      inline-size: min(90%, 18em);
+    }
   }
 
   &__menu {
     flex: auto;
+
+    @include media(lg, max) {
+      position: absolute;
+      inset: calc(100% + 0.25em) 0 auto auto;
+      padding: 0.75em;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      background-color: var(--bg-color, #fff);
+
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+      transition:
+        visibility 0s 0.35s,
+        opacity 0.35s;
+    }
+
+    @include media(xs, max) {
+      inset: calc(100% + 0.25em) 0 auto 0;
+    }
   }
 
   &__menu-list {
@@ -85,9 +108,75 @@
     flex: auto;
   }
 
+  &__mobile-menu-button {
+    @extend %reset-btn;
+    padding: 0.5em 0.25em;
+    @include box(2em);
+    transition: 0.35s;
+    cursor: pointer;
+
+    display: flex;
+    margin-inline-start: auto;
+
+    @include media(lg) {
+      display: none;
+    }
+  }
+
+  &__mobile-menu-button-item {
+    margin: auto;
+
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.35s;
+
+    &:before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: inherit;
+      border-radius: inherit;
+      background-color: inherit;
+    }
+    &::before {
+      top: 10px;
+    }
+  }
+
+  &--opened {
+    .header__menu {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+      user-select: auto;
+      transition:
+        visibility 0s,
+        opacity 0.35s;
+    }
+
+    .header__mobile-menu-button-item {
+      transform: rotate(135deg);
+
+      &::before,
+      &::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   @include media(lg) {
-    position: static;
+    padding: 1.5em;
+    inline-size: min(19em, 80vw);
     border-radius: 25px;
-    box-shadow: none;
+    flex-direction: column;
+    align-items: stretch;
   }
 }
