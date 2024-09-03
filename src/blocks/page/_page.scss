@@ -9,7 +9,7 @@
   // &__header {}
 
   &__content {
-    display: flex;
+    min-inline-size: 0;
   }
 
   &__heading {

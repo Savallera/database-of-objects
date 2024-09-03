@@ -6,7 +6,7 @@ import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import imagemin from 'gulp-imagemin';
 import newer from 'gulp-newer';
-import webp from 'gulp-webp';
+// import webp from 'gulp-webp';
 import avif from 'gulp-avif';
 
 export default () => {

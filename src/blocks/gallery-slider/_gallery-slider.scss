@@ -1,0 +1,27 @@
+.gallery-slider {
+  min-inline-size: 0;
+  // &__track {}
+
+  // &__list {}
+
+  // &__slide {}
+
+  &__item {
+    position: relative;
+    aspect-ratio: 650/400;
+  }
+
+  &__icon {
+    position: absolute;
+    @include box(2em);
+    inset: 1em 1em auto auto;
+    color: #fff;
+  }
+
+  &__image {
+    display: block;
+    @include box(100%);
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}

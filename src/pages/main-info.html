@@ -3,131 +3,7 @@
   @@include("../blocks/head/head.html", {"title": "Карточка объекта - Общая информация"})
   <body>
     <div class="page">
-      <header class="page__header header">
-        <a class="header__logo-link">
-          <img src="./images/header__logo.svg" alt="Логотип" class="header__logo" />
-        </a>
-        <nav class="header__menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a
-                class="button button--theme-main button--size-sm header__menu-button"
-                href="./"
-                ><span class="button__text">Вернуться на главную</span></a
-              >
-            </li>
-            <li class="header__menu-item">
-              <button
-                type="button"
-                class="button button--theme-grey button--size-sm header__menu-button"
-              >
-                <span class="button__text">Сформировать отчет</span>
-              </button>
-            </li>
-            <li class="header__menu-item">
-              <a
-                class="header__menu-link header__menu-link--actived"
-                href="#"
-                rel="noopener ugc"
-              >
-                <span
-                  class="header__menu-link-icon icon icon--type-info-rectangle"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Общая информация</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-image"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Фотографии</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-building"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Спортзоны</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-wrench"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Ремонт</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-settings"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text"
-                  >Рейтинг технического состояния</span
-                >
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-structure"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Мониторинг проверок</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-location-in-map"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Территория</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-user"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Контакты</span>
-              </a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="#" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-document"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Документы</span>
-              </a>
-            </li>
-            <li class="header__menu-item header__menu-item--content-exit">
-              <a class="header__menu-link" href="./auth.html" rel="noopener ugc">
-                <span
-                  class="header__menu-link-icon icon icon--type-exit"
-                  aria-hidden="true"
-                ></span>
-                <span class="header__menu-link-text">Выход</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="header__mobile-menu-button"
-          aria-label="Мобильное меню"
-        ><div class="header__mobile-menu-button-item"></div></button>
-      </header>
+      @@include("../blocks/header/header.html")
       <main class="page__content">
         <section class="card">
           <div class="card__header">
@@ -139,6 +15,122 @@
               class="card__icon-button icon-button icon icon--type-close"
               aria-label="Закрыть"
             ></button>
+          </div>
+          <div class="card__body card__body--content-main-info">
+            <div class="splide gallery-slider" id="gallery-slider">
+              <div class="splide__track gallery-slider__track">
+                <ul class="splide__list gallery-slider__list">
+                  <li class="splide__slide gallery-slider__slide">
+                    <div class="gallery-slider__item">
+                      <button
+                        type="button"
+                        class="gallery-slider__icon icon-button icon icon--type-search-in-box"
+                        aria-label="Развернуть"
+                      ></button>
+                      <img
+                        class="gallery-slider__image"
+                        src="https://mso.mossport.ru/upload/iblock/c1f/olegvostrikov.ru_IMG_9085.jpg"
+                        alt="Описание изображения"
+                        loading="lazy"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="map map--content-main-info"></div>
+            <ul class="card__data">
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Реестровый номер:</span>
+                  <span class="data-item__text">108294</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Статус объекта:</span>
+                  <span class="data-item__text">Функционирует</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Балансодержатель:</span>
+                  <span class="data-item__text">ГБУ «Мосспортобъект»</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Тип объекта:</span>
+                  <span class="data-item__text">Физкультурно-оздоровительный комплекс</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Год ввода:</span>
+                  <span class="data-item__text">2010</span>
+                </p>
+              </li>
+              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Округ:</span>
+                  <span class="data-item__text">СЗАО</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Район:</span>
+                  <span class="data-item__text">Покровское-Стрешнево</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Адрес:</span>
+                  <span class="data-item__text">улица Габричевского, домовладение 1</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Кадастровый номер:</span>
+                  <span class="data-item__text">77:08:0007009:1013</span>
+                </p>
+              </li>
+              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Площадь объекта:</span>
+                  <span class="data-item__text">1660.9</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">ЕПС:</span>
+                  <span class="data-item__text">41</span>
+                </p>
+              </li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Этажность:</span>
+                  <span class="data-item__text">2</span>
+                </p>
+              </li>
+              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-item">
+                <p class="data-item">
+                  <span class="data-item__label">Характеристики:</span>
+                  <ul class="data-item__list data-item__text">
+                    <li>Спортивный</li>
+                    <li>Крытый</li>
+                    <li>Капитальный</li>
+                    <li>Отдельно-стоящее здание</li>
+                    <li>Специально построенное спортивно-сооружение</li>
+                    <li>Районное</li>
+                    <li>Типовой ФОК (зал)</li>
+                    <li>АИП</li>
+                  </ul>
+                </p>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
