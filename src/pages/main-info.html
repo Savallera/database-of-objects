@@ -4,22 +4,37 @@
   <body>
     <div class="page">
       @@include("../blocks/header/header.html")
-      <main class="page__content">
-        <section class="card">
-          <div class="card__header">
-            <h1 class="page__heading">СК «Триумф»</h1>
-            <p class="card__tag">Функционирует</p>
-            <p class="card__date">Дата актуализации 27.09.2023</p>
-            <button
-              type="button"
-              class="card__icon-button icon-button icon icon--type-close"
-              aria-label="Закрыть"
-            ></button>
-          </div>
-          <div class="card__body card__body--content-main-info">
-            <div class="splide gallery-slider" id="gallery-slider">
+      <main class="page__content card">
+        <div class="page__card-header card__header">
+          <h1 class="page__heading">СК «Триумф»</h1>
+          <p class="card__tag">Функционирует</p>
+          <p class="card__date">Дата актуализации 27.09.2023</p>
+          <button
+            type="button"
+            class="card__icon-button icon-button icon icon--type-close"
+            aria-label="Закрыть"
+          ></button>
+        </div>
+        <div class="page__card-body card__body card__body--content-tree-columns">
+          <div class="card__column card__column--content-images">
+            <div class="splide gallery-slider card__column-item" id="gallery-slider" aria-label="Галерея">
               <div class="splide__track gallery-slider__track">
                 <ul class="splide__list gallery-slider__list">
+                  <li class="splide__slide gallery-slider__slide">
+                    <div class="gallery-slider__item">
+                      <button
+                        type="button"
+                        class="gallery-slider__icon icon-button icon icon--type-search-in-box"
+                        aria-label="Развернуть"
+                      ></button>
+                      <img
+                        class="gallery-slider__image"
+                        src="https://mso.mossport.ru/upload/iblock/c1f/olegvostrikov.ru_IMG_9085.jpg"
+                        alt="Описание изображения"
+                        loading="lazy"
+                      />
+                    </div>
+                  </li>
                   <li class="splide__slide gallery-slider__slide">
                     <div class="gallery-slider__item">
                       <button
@@ -38,7 +53,9 @@
                 </ul>
               </div>
             </div>
-            <div class="map map--content-main-info"></div>
+            <div class="map map--content-main-info card__column-item" aria-label="Карта"></div>
+          </div>
+          <div class="card__column card__column--content-data" aria-label="Данные">
             <ul class="card__data">
               <li class="card__data-item">
                 <p class="data-item">
@@ -70,7 +87,7 @@
                   <span class="data-item__text">2010</span>
                 </p>
               </li>
-              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-separator" aria-hidden="true"></li>
               <li class="card__data-item">
                 <p class="data-item">
                   <span class="data-item__label">Округ:</span>
@@ -95,7 +112,7 @@
                   <span class="data-item__text">77:08:0007009:1013</span>
                 </p>
               </li>
-              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-separator" aria-hidden="true"></li>
               <li class="card__data-item">
                 <p class="data-item">
                   <span class="data-item__label">Площадь объекта:</span>
@@ -114,7 +131,7 @@
                   <span class="data-item__text">2</span>
                 </p>
               </li>
-              <li class="card__data-item card__data-separator" aria-hidden="true"></li>
+              <li class="card__data-separator" aria-hidden="true"></li>
               <li class="card__data-item">
                 <p class="data-item">
                   <span class="data-item__label">Характеристики:</span>
@@ -131,8 +148,39 @@
                 </p>
               </li>
             </ul>
+            <div class="rating">
+              <div class="rating__group">
+                <p class="rating__count">5,0</p>
+                <div class="rating__stars">
+                  <span class="rating__star rating__star--actived icon icon--type-rating"></span>
+                  <span class="rating__star rating__star--actived icon icon--type-rating"></span>
+                  <span class="rating__star rating__star--actived icon icon--type-rating"></span>
+                  <span class="rating__star rating__star--actived icon icon--type-rating"></span>
+                  <span class="rating__star rating__star--actived icon icon--type-rating"></span>
+                </div>
+              </div>
+              <p class="rating__text">Рейтинг технического состояния объекта</p>
+            </div>
           </div>
-        </section>
+          <div class="card__column card__column--content-asside">
+            <h2 class="card__data-title">Свойства</h2>
+            <ul class="card__data card__data--fs-sm card__data--bullet">
+              <li class="card__data-item">Раздевалка (40 мест)</li>
+              <li class="card__data-item">Гардероб (40 мест)</li>
+              <li class="card__data-item">Душ</li>
+              <li class="card__data-item">Охрана объекта</li>
+              <li class="card__data-item">Автомобильная парковка (40 мест)</li>
+              <li class="card__data-item">Остановки городского общественного транспорта</li>
+              <li class="card__data-item">Туалет</li>
+              <li class="card__data-item">Wi-Fi</li>
+              <li class="card__data-item">Медпункт</li>
+              <li class="card__data-item">Приспособлен для посещений инвалидами</li>
+              <li class="card__data-item">Звуковое сопровождение</li>
+              <li class="card__data-item">Банкомат</li>
+              <li class="card__data-item">Техсервис</li>
+            </ul>
+          </div>
+        </div>
       </main>
     </div>
     @@include("../blocks/footer/footer.html")

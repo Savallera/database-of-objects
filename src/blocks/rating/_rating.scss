@@ -1,0 +1,34 @@
+.rating {
+  inline-size: 18em;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+  }
+
+  &__count {
+    flex: none;
+    font-size: 1.875em;
+    font-variation-settings: 'wght' 700;
+  }
+
+  &__stars {
+    flex: auto;
+    display: flex;
+  }
+
+  &__star {
+    @include box(1.875em);
+    display: block;
+    color: var(--icon-color, #8b909c);
+    &--actived {
+      color: var(--main-color, #e22b36);
+    }
+  }
+
+  &__text {
+    color: var(--text-lower-color, #a7aab4);
+    line-height: 1.5;
+  }
+}

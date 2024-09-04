@@ -1,15 +1,9 @@
 .card {
-  inline-size: 100%;
-  background-color: var(--bg-color, #fff);
-  padding: 0.75em;
-  border-radius: 10px;
-
   &__header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.75em;
-    margin-block-end: 1em;
   }
 
   &__tag {
@@ -25,7 +19,7 @@
 
   &__date {
     font-size: 0.875em;
-    color: var(--grey-200, #c2c5cb);
+    color: var(---text-lower-color, #a7aab4);
   }
 
   &__icon-button {
@@ -33,19 +27,97 @@
   }
 
   &__body {
-    &--content-main-info {
-      display: grid;
+    &--content-tree-columns {
+      display: flex;
       gap: 1.5em;
-      grid-template-columns: 0.7fr 0.6fr 0.4fr;
+
+      @include media(xl, max) {
+        flex-wrap: wrap;
+        gap: 1em;
+      }
     }
   }
 
-  &__data {
-    grid-row: span 2;
+  &__column {
+    &--content-images {
+      flex: auto;
+      max-inline-size: min(40em, 45%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      @include media(xl, max) {
+        max-inline-size: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+    }
+
+    &--content-data {
+      flex: auto;
+      max-inline-size: min(35em, 40%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+
+      @include media(xl, max) {
+        gap: 1em;
+        max-inline-size: unset;
+        flex: 1 1 min(18em, 100%);
+      }
+    }
+
+    &--content-asside {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+
+      @include media(xl, max) {
+        flex: 1 1 min(18em, 100%);
+      }
+    }
   }
 
-  @include media(lg) {
-    padding: 1.5em;
-    border-radius: 25px;
+  &__column-item {
+    min-inline-size: 0;
+    @include media(xl, max) {
+      flex: 1 1 min(18em, 100%);
+    }
+  }
+
+  &__data-title {
+    font-size: inherit;
+    font-variation-settings: 'wght' 700;
+  }
+
+  &__data {
+    &--bullet li {
+      position: relative;
+      padding-inline-start: 1.5em;
+
+      &:not(:last-child) {
+        margin-block-end: 1em;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0.625em auto auto 0.325em;
+        display: block;
+        @include box(0.375em);
+        background-color: var(--main-color, #e22b36);
+        border-radius: 50%;
+      }
+    }
+    &--fs-sm {
+      font-size: 0.875em;
+    }
+  }
+  // &__data-item {}
+
+  &__data-separator {
+    margin-block-end: min(5%, 2.5em);
   }
 }

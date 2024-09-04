@@ -1,10 +1,27 @@
 .gallery-slider {
-  min-inline-size: 0;
   // &__track {}
 
   // &__list {}
 
   // &__slide {}
+
+  &__arrow {
+    @include box(2.5em);
+    border-radius: 0;
+    background-color: #fff;
+    opacity: 1;
+
+    svg {
+      color: inherit;
+    }
+
+    &--prev {
+      left: 1.5em;
+    }
+    &--next {
+      right: 1.5em;
+    }
+  }
 
   &__item {
     position: relative;
