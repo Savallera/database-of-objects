@@ -28,14 +28,23 @@
     aspect-ratio: 650/400;
   }
 
-  &__icon {
+  &__item-panel {
     position: absolute;
-    @include box(2em);
     inset: 1em 1em auto auto;
+    display: flex;
+    gap: .5em;
+    align-items: center;
     color: #fff;
   }
 
-  &__image {
+  &__item-label {
+    font-variation-settings: 'wght' 700;
+  }
+  &__item-icon {
+    @include box(2em);
+  }
+
+  &__item-image {
     display: block;
     @include box(100%);
     object-fit: cover;

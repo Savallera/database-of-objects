@@ -61,11 +61,13 @@ export default {
       pathSrc + '/images/*.svg',
       pathSrc + '/images/**/*.svg',
       '!' + pathSrc + '/images/icons/*.svg',
+      '!' + pathSrc + '/images/sport-icons/*.svg',
     ],
     watch: [
       pathSrc + '/images/*.svg',
       pathSrc + '/images/**/*.svg',
       '!' + pathSrc + '/images/icons/*.svg',
+      '!' + pathSrc + '/images/sport-icons/*.svg',
     ],
     dest: pathDest + '/images',
   },
@@ -73,6 +75,12 @@ export default {
   svgSprite: {
     src: [pathSrc + '/images/icons/*.svg'],
     watch: [pathSrc + '/images/icons/*.svg'],
+    dest: pathDest + '/images',
+  },
+
+  svgSpriteSport: {
+    src: [pathSrc + '/images/sport-icons/*.svg'],
+    watch: [pathSrc + '/images/sport-icons/*.svg'],
     dest: pathDest + '/images',
   },
 

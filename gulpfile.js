@@ -14,6 +14,7 @@ import scriptsLibs from './gulp/tasks/scriptsLibs.js';
 import images from './gulp/tasks/images.js';
 import favicon from './gulp/tasks/favicon.js';
 import svgSprite from './gulp/tasks/svgSprite.js';
+import svgSpriteSport from './gulp/tasks/svgSpriteSport.js';
 import fonts from './gulp/tasks/fonts.js';
 import files from './gulp/tasks/files.js';
 
@@ -34,6 +35,7 @@ function watcher() {
   gulp.watch(path.images.watch, images).on('all', browserSync.reload);
   gulp.watch(path.favicon.watch, favicon).on('all', browserSync.reload);
   gulp.watch(path.svgSprite.watch, svgSprite).on('all', browserSync.reload);
+  gulp.watch(path.svgSpriteSport.watch, svgSpriteSport).on('all', browserSync.reload);
   gulp.watch(path.fonts.watch, fonts).on('all', browserSync.reload);
   gulp.watch(path.files.watch, files).on('all', browserSync.reload);
 }
@@ -49,6 +51,7 @@ const build = gulp.series(
     images,
     favicon,
     svgSprite,
+    svgSpriteSport,
     fonts,
     files
   )
@@ -64,6 +67,7 @@ export { scriptsLibs };
 export { images };
 export { favicon };
 export { svgSprite };
+export { svgSpriteSport };
 export { fonts };
 export { files };
 export { build };

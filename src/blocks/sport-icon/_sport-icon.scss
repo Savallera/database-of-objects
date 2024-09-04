@@ -1,0 +1,24 @@
+.sport-icon {
+  color: inherit;
+
+  &::before {
+    content: '';
+    background-color: currentColor;
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  &--id-46::before {
+    mask-image: url('../images/sport-icons.svg#46');
+  }
+  &--id-47::before {
+    mask-image: url('../images/sport-icons.svg#47');
+  }
+  &--id-48::before {
+    mask-image: url('../images/sport-icons.svg#48');
+  }
+}
