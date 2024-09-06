@@ -1,6 +1,7 @@
 .accordion {
   &__button {
     @extend %reset-btn;
+    text-align: left;
     padding: 0;
     display: flex;
     align-items: flex-start;
@@ -28,24 +29,25 @@
   }
 
   &__button-icon {
+    flex: 0 0 1.25em;
     @include box(1.25em);
     color: inherit;
   }
 
   &__section {
     display: none;
+    padding-block: 1em;
+    &--no-indent {
+      padding-block: 0;
+    }
   }
 
   &--opened {
     & > .accordion__section {
       display: block;
-      margin-block-end: 1em;
     }
-    & > .accordion__button {
-      margin-block-end: 1em;
-      .accordion__button-icon {
-        transform: scaleY(-1);
-      }
+    & > .accordion__button .accordion__button-icon {
+      transform: scaleY(-1);
     }
   }
 

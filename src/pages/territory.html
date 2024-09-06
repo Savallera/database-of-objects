@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Территория"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
+        <section class="content__body territory" aria-label="Территория">
+          <div class="territory__columns">
+            <div class="map territory__column territory__column--content-map" aria-label="Карта"></div>
+            <div class="territory__column">
+              <h2 class="content__data-title content__data-title--fs-lg">
+                Сведения об участке
+              </h2>
+              <ul class="data-list">
+                <li class="data-list__item">
+                  <span class="data-list__label">Округ:</span>
+                  <span class="data-list__text">СЗАО</span>
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Район:</span>
+                  <span class="data-list__text">Покровское-Стрешнево</span>
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Адрес:</span>
+                  <span class="data-list__text">улица Габричевского, вл. 1</span>
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Кадастровый номер:</span>
+                  <span class="data-list__text">77:08:0007009:1975</span>
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Площадь, м2:</span>
+                  <span class="data-list__text">3009</span>
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">ВРИ:</span>
+                  <span class="data-list__text"
+                    >Для размещения объектов физической культуры и спорта</span
+                  >
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Вид пользования:</span>
+                  <span class="data-list__text"
+                    >Постоянное (бессрочное) пользование</span
+                  >
+                </li>
+                <li class="data-list__item">
+                  <span class="data-list__label">Балансодержатель:</span>
+                  <span class="data-list__text">Мосспортобъект</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Спортивные объекты</span>
+              <span class="accordion__button-icon icon icon--type-drop-down"></span>
+            </button>
+            <div class="accordion__section">
+              <div class="territory__cards">
+                <div class="image-card territory__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Ск «Триумф»</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Вспомогательные объекты</span>
+              <span class="accordion__button-icon icon icon--type-drop-down"></span>
+            </button>
+            <div class="accordion__section">
+              <div class="territory__cards">
+                <div class="image-card territory__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-02"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид сзади</h2>
+                </div>
+                <div class="image-card territory__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-03"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид слева</h2>
+                </div>
+                <div class="image-card territory__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-04"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид справа</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>

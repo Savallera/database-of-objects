@@ -1,0 +1,33 @@
+.territory {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    @include media(xl) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__column {
+    flex: auto;
+    @include media(xl) {
+      flex: 1 1 50%;
+      &--content-map {
+        max-inline-size: 31em;
+      }
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(22em, 100%), 1fr));
+    gap: 1em;
+
+    @include media(xl) {
+      grid-template-columns: repeat(auto-fill, minmax(29em, 1fr));
+    }
+  }
+}

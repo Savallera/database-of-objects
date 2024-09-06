@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Рейтинг технического состояния"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
+        <section class="content__body technical-rating">
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Общие инженерные системы</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">4,8</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Специализированные инженерные системы</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Системы безопасности</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Конструктивные элементы</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Кровля</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Двери</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Окна</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Фасады</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Внутренняя отделка</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Мебель</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button technical-rating__accordion-button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Спортивный инвентарь</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="technical-rating__accordion-button-rating">5,0</span>
+            </button>
+            <div class="accordion__section accordion__section--no-indent">
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ГВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">ХВС</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Отопление</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Вентиляция</span>
+                <span class="technical-rating__item-rating">3</span>
+              </p>
+              <p class="technical-rating__item">
+                <span class="technical-rating__item-text">Электрооборудование</span>
+                <span class="technical-rating__item-rating">5</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>

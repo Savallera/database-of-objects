@@ -19,7 +19,7 @@
 * [Фотографии](https://savallera.github.io/database-of-objects/gallery.html)
 * [Спортзоны](https://savallera.github.io/database-of-objects/sport-zones.html)
 * [Ремонт](https://savallera.github.io/database-of-objects/services.html)
-* [Рейтинг технического состояния](https://savallera.github.io/database-of-objects/ratings.html)
+* [Рейтинг технического состояния](https://savallera.github.io/database-of-objects/technical-rating.html)
 * [Мониторинг проверок](https://savallera.github.io/database-of-objects/monitoring.html)
 * [Территория](https://savallera.github.io/database-of-objects/territory.html)
 * [Контакты](https://savallera.github.io/database-of-objects/contacts.html)

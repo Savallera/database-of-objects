@@ -3,9 +3,8 @@
   @include box(100%, auto);
   object-fit: cover;
   background-color: var(--bg-secondary-color, #dedfe3);
+  border-radius: 20px;
+  aspect-ratio: 650/400;
 
-  &--content-main-info {
-    border-radius: 20px;
-    aspect-ratio: 650/400;
-  }
+  // &--content-main-info {}
 }
