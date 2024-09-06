@@ -19,7 +19,9 @@
           <div class="tab">
             <ul class="tab__list">
               <li class="tab__item">
-                <a href="#" class="tab__link tab__link--actived" rel="ugs">2022</a>
+                <a href="#" class="tab__link tab__link--actived" rel="ugs"
+                  >2022</a
+                >
               </li>
               <li class="tab__item">
                 <a href="#" class="tab__link" rel="ugs">2018</a>
@@ -30,7 +32,297 @@
             </ul>
           </div>
         </header>
-        <section class="content__body" aria-label="Фотографии">
+        <section class="content__body gallery" aria-label="Фотографии">
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Фасад</span>
+              <span class="accordion__button-icon icon icon--type-drop-down"></span>
+            </button>
+            <div class="accordion__section">
+              <div class="gallery__cards">
+                <div class="image-card gallery__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид спереди</h2>
+                </div>
+                <div class="image-card gallery__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-02"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид сзади</h2>
+                </div>
+                <div class="image-card gallery__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-03"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид слева</h2>
+                </div>
+                <div class="image-card gallery__card">
+                  <div
+                    class="splide gallery-slider"
+                    id="gallery-slider-04"
+                    aria-label="Галерея"
+                  >
+                    <div class="splide__track gallery-slider__track">
+                      <ul class="splide__list gallery-slider__list">
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/upload/iblock/35a/Озерная%20пункт%20проката%202.jpg"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                        <li class="splide__slide gallery-slider__slide">
+                          <div class="image-card__item">
+                            <div class="image-card__item-panel">
+                              <p class="image-card__item-label">25.07.2024</p>
+                              <button
+                                type="button"
+                                class="image-card__item-icon icon-button icon icon--type-search-in-box"
+                                aria-label="Развернуть"
+                              ></button>
+                            </div>
+                            <img
+                              class="image-card__image"
+                              src="https://mso.mossport.ru/data/file/7680ee999046aeba353bd201622a5486"
+                              alt="Описание изображения"
+                              loading="lazy"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="image-card__image-title">Вид справа</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Внутренние помещения</span>
+              <span class="accordion__button-icon icon icon--type-drop-down"></span>
+            </button>
+            <div class="accordion__section">
+              <div class="accordion accordion--theme-lower">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Вестибюль</span>
+                  <span class="accordion__button-icon icon icon--type-drop-down"></span>
+                </button>
+                <div class="accordion__section">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam est magnam in, laboriosam repudiandae cumque et dolorum optio aperiam iste officiis obcaecati ad! Exercitationem numquam maxime sed id tempora!
+                </div>
+              </div>
+              <div class="accordion accordion--theme-lower">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Раздевалки</span>
+                  <span class="accordion__button-icon icon icon--type-drop-down"></span>
+                </button>
+                <div class="accordion__section">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam est magnam in, laboriosam repudiandae cumque et dolorum optio aperiam iste officiis obcaecati ad! Exercitationem numquam maxime sed id tempora!
+                </div>
+              </div>
+              <div class="accordion accordion--theme-lower">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Коридоры</span>
+                  <span class="accordion__button-icon icon icon--type-drop-down"></span>
+                </button>
+                <div class="accordion__section">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam est magnam in, laboriosam repudiandae cumque et dolorum optio aperiam iste officiis obcaecati ad! Exercitationem numquam maxime sed id tempora!
+                </div>
+              </div>
+              <div class="accordion accordion--theme-lower">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Спортивные зоны</span>
+                  <span class="accordion__button-icon icon icon--type-drop-down"></span>
+                </button>
+                <div class="accordion__section">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam est magnam in, laboriosam repudiandae cumque et dolorum optio aperiam iste officiis obcaecati ad! Exercitationem numquam maxime sed id tempora!
+                </div>
+              </div>
+              <div class="accordion accordion--theme-lower">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Душевые и санузлы</span>
+                  <span class="accordion__button-icon icon icon--type-drop-down"></span>
+                </button>
+                <div class="accordion__section">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quibusdam est magnam in, laboriosam repudiandae cumque et dolorum optio aperiam iste officiis obcaecati ad! Exercitationem numquam maxime sed id tempora!
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="page__fixed-button button" type="button">
+            <span class="button__text">Смотреть панораму</span>
+          </button>
         </section>
       </main>
     </div>

@@ -36,6 +36,21 @@
     }
   }
 
+  // Смотреть панораму
+  &__fixed-button {
+    position: fixed;
+    inset: auto .5em .5em auto;
+    background-color: #fff;
+    border-radius: 10px;
+    color: var(--main-color, #e22b36);
+    text-decoration-line: underline;
+    text-underline-position: under;
+
+    @include media(lg) {
+      inset: auto 2.5em 2.5em auto;
+    }
+  }
+
   @include media(lg) {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;

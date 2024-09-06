@@ -1,0 +1,67 @@
+.accordion {
+  &__button {
+    @extend %reset-btn;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    transition:
+      color 0.35s,
+      transform 0.15s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--text-color, #272b37);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__button-text {
+    line-height: 1.4;
+    font-variation-settings: 'wght' 700;
+  }
+
+  &__button-icon {
+    @include box(1.25em);
+    color: inherit;
+  }
+
+  &__section {
+    display: none;
+  }
+
+  &--opened {
+    & > .accordion__section {
+      display: block;
+      margin-block-end: 1em;
+    }
+    & > .accordion__button {
+      margin-block-end: 1em;
+      .accordion__button-icon {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  &--theme-lower {
+    .accordion__button {
+      gap: 0.5em;
+      color: var(--text-lower-color, #a7aab4);
+    }
+
+    .accordion__button-text {
+      font-variation-settings: 'wght' 400;
+      font-size: 0.875em;
+    }
+
+    .accordion__button-icon {
+      @include box(1em);
+    }
+  }
+}

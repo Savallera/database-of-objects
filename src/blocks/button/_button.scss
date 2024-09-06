@@ -6,7 +6,9 @@
   font-size: inherit;
   font-variation-settings: 'wght' 500;
   padding: 1em 0.625rem;
-  transition: 0.35s;
+  transition:
+    color 0.35s,
+    transform 0.15s;
 
   &:focus {
     outline: none;
@@ -14,6 +16,10 @@
 
   &:focus-visible {
     outline: 2px solid var(--text-color, #272b37);
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 
   &__text {

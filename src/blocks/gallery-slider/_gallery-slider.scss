@@ -22,32 +22,4 @@
       right: 1.5em;
     }
   }
-
-  &__item {
-    position: relative;
-    aspect-ratio: 650/400;
-  }
-
-  &__item-panel {
-    position: absolute;
-    inset: 1em 1em auto auto;
-    display: flex;
-    gap: .5em;
-    align-items: center;
-    color: #fff;
-  }
-
-  &__item-label {
-    font-variation-settings: 'wght' 700;
-  }
-  &__item-icon {
-    @include box(2em);
-  }
-
-  &__item-image {
-    display: block;
-    @include box(100%);
-    object-fit: cover;
-    border-radius: 20px;
-  }
 }

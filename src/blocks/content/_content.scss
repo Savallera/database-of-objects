@@ -47,6 +47,7 @@
     @include media(lg) {
       flex: auto;
       overflow: auto;
+      padding: 2px;
     }
   }
 }

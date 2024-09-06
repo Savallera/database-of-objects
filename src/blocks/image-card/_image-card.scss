@@ -1,0 +1,36 @@
+.image-card {
+  &__item {
+    position: relative;
+    // aspect-ratio: 650/400;
+  }
+  &__item-panel {
+    position: absolute;
+    inset: 1em 1em auto auto;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__item-label {
+    font-variation-settings: 'wght' 700;
+  }
+  &__item-icon {
+    @include box(2em);
+  }
+  &__image {
+    display: block;
+    @include box(100%, auto);
+    aspect-ratio: 650/400;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  &__image-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-variation-settings: 'wght' 700;
+    color: var(--text-lower-color, #a7aab4);
+    margin-block: 0.75em 0;
+  }
+}
