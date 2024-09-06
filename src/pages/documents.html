@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Документы"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
+        <section class="content__body documents" aria-label="Фотографии">
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Право пользования</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+            </button>
+            <div class="accordion__section">
+              <ul class="data-list">
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Выписка из ЕГРН</a>
+                </li>
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Распоряжение Департамента городского имущества города Москвы</a>
+                </li>
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Акт приема-передачи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Объект</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+            </button>
+            <div class="accordion__section">
+              <ul class="data-list">
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">План БТИ</a>
+                </li>
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Технический паспорт</a>
+                </li>
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Проект</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Ремонт</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+            </button>
+            <div class="accordion__section">
+              <ul class="data-list">
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Проект</a>
+                </li>
+                <li class="data-list__item">
+                  <a href="#" class="data-list__link" rel="noopener">Концепция</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>

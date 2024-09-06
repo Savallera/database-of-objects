@@ -42,6 +42,22 @@
     margin-block-end: min(5%, 2.5em);
   }
 
+  &__link {
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
   &--bullet li {
     position: relative;
     padding-inline-start: 1.5em;

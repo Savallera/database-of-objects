@@ -2,9 +2,7 @@
   &__button {
     @extend %reset-btn;
     text-align: left;
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
+    padding: 0.5em 0;
     gap: 1em;
     transition:
       color 0.35s,
@@ -29,17 +27,16 @@
   }
 
   &__button-icon {
-    flex: 0 0 1.25em;
+    display: inline-block;
+    min-inline-size: 1.5em;
+    max-inline-size: 1.5em;
     @include box(1.25em);
+    vertical-align: middle;
     color: inherit;
   }
 
   &__section {
     display: none;
-    padding-block: 1em;
-    &--no-indent {
-      padding-block: 0;
-    }
   }
 
   &--opened {
@@ -53,6 +50,7 @@
 
   &--theme-lower {
     .accordion__button {
+      padding-block: 0.25em;
       gap: 0.5em;
       color: var(--text-lower-color, #a7aab4);
     }
