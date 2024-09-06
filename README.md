@@ -16,6 +16,14 @@
 Карта объекта
 
 * [Общая информация](https://savallera.github.io/database-of-objects/main-info.html)
+* [Фотографии](https://savallera.github.io/database-of-objects/gallery.html)
+* [Спортзоны](https://savallera.github.io/database-of-objects/sport-zones.html)
+* [Ремонт](https://savallera.github.io/database-of-objects/services.html)
+* [Рейтинг технического состояния](https://savallera.github.io/database-of-objects/ratings.html)
+* [Мониторинг проверок](https://savallera.github.io/database-of-objects/monitoring.html)
+* [Территория](https://savallera.github.io/database-of-objects/territory.html)
+* [Контакты](https://savallera.github.io/database-of-objects/contacts.html)
+* [Документы](https://savallera.github.io/database-of-objects/documents.html)
 
 Команды
 
