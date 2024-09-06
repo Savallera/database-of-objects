@@ -1,0 +1,34 @@
+.tab {
+  &__list {
+    @extend %reset-list;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.5;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
+
+    &:hover {
+      color: var(--main-color, #e22b36);
+    }
+
+    &--actived {
+      color: var(--main-color, #e22b36);
+      font-variation-settings: 'wght' 600;
+    }
+  }
+}

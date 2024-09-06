@@ -5,16 +5,18 @@
     <div class="page">
       @@include("../blocks/header/header.html")
       <main class="page__content content">
-        <div class="content__header">
-          <h1 class="page__heading">СК «Триумф»</h1>
-          <p class="content__header-tag">Функционирует</p>
-          <p class="content__header-date">Дата актуализации 27.09.2023</p>
-          <button
-            type="button"
-            class="content__header-icon-button icon-button icon icon--type-close"
-            aria-label="Закрыть"
-          ></button>
-        </div>
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
         <section class="content__body main-info" aria-label="Общая информация">
           <div class="main-info__column main-info__column--content-gallery-map">
             <div
@@ -128,7 +130,7 @@
               <li class="data-list__separator" aria-hidden="true"></li>
               <li class="data-list__item">
                 <span class="data-list__label">Характеристики:</span>
-                <ul class="data-item__list data-list__text">
+                <ul class="data-list__text data-list__text--content-list">
                   <li>Спортивный</li>
                   <li>Крытый</li>
                   <li>Капитальный</li>

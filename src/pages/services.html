@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Ремонт"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="tab">
+            <ul class="tab__list">
+              <li class="tab__item">
+                <a href="#" class="tab__link tab__link--actived" rel="ugs">2022</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link" rel="ugs">2018</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link" rel="ugs">2016</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <section class="content__body" aria-label="Ремонт">
+          <ul class="data-list">
+            <li class="data-list__item">
+              <span class="data-list__label">Тип ремонта:</span>
+              <span class="data-list__text">Комплексный</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Статус ремонта:</span>
+              <span class="data-list__text">Завершен</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Начало работ:</span>
+              <span class="data-list__text">01.08.2022</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Окончание работ:</span>
+              <ul class="data-list__text data-list__text--content-list-bullet">
+                <li>Облицовка фасада</li>
+                <li>Ремонт кровли</li>
+                <li>Ремонт инженерных систем</li>
+                <li>Замена остекления</li>
+                <li>Отделка внутренних помещений</li>
+              </ul>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Исполнитель:</span>
+              <span class="data-list__text">АНО «Мосспортразвитие»</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Программа развития:</span>
+              <span class="data-list__text">Программа 100</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Соответствие брендбуку:</span>
+              <span class="data-list__text">да</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>
