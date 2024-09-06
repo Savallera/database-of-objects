@@ -172,7 +172,22 @@
             ></button>
           </div>
         </header>
-        <section class="content__body"></section>
+        <section class="content__body rating">
+          <div class="accordion">
+            <button
+              type="button"
+              class="accordion__button"
+              onclick="toggleAccordion(this)"
+            >
+              <span class="accordion__button-text">Общие инженерные системы</span>
+              <span
+                class="accordion__button-icon icon icon--type-drop-down"
+              ></span>
+              <span class="">4,8</span>
+            </button>
+            <div class="accordion__section"></div>
+          </div>
+        </section>
       </main>
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
