@@ -27,17 +27,6 @@
     }
   }
 
-  &__card-header {
-    flex: none;
-  }
-
-  &__card-body {
-    @include media(lg) {
-      flex: auto;
-      overflow: auto;
-    }
-  }
-
   &__heading {
     font-size: var(--display-font, 2.5em);
     font-variation-settings: 'wght' 800;
