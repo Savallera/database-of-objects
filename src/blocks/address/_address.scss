@@ -1,0 +1,47 @@
+.address {
+  font-style: normal;
+
+  &__item {
+    line-height: 2;
+    margin-block-end: 2em;
+  }
+
+  // &__item-title {}
+
+  &__item-label {
+    font-variation-settings: 'wght' 700;
+  }
+
+  // &__item-text {}
+
+  &__item-link {
+    display: inline-flex;
+    gap: 0.5em;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    &--acent {
+      color: var(--main-color, #e22b36);
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  &__item-icon {
+    flex: 0 0 1.5em;
+    @include box(1.5em);
+    margin-block-start: 0.15em;
+  }
+}

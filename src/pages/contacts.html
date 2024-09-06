@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Контакты"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
+        <section class="content__body" aria-label="Контакты">
+          <address class="address">
+            <div class="address__item">
+              <p class="address__item-title">
+                <span class="address__item-label">Руководитель объекта:</span>
+                <span class="address__item-text">Павлова Анастасия</span>
+              </p>
+              <a
+                class="address__item-link"
+                href="tel:84994441478"
+                rel="noopener nofollow"
+              >
+                <span class="address__item-icon icon icon--type-phone"></span>
+                <span>+7 499 444 1478 доб. 5302</span>
+              </a>
+            </div>
+            <div class="address__item">
+              <p class="address__item-title">
+                <span class="address__item-label">Главный инженер:</span>
+                <span class="address__item-text">Иванов Иван</span>
+              </p>
+              <a
+                class="address__item-link"
+                href="tel:84994441478"
+                rel="noopener nofollow"
+              >
+                <span class="address__item-icon icon icon--type-phone"></span>
+                <span>+7 499 444 1478 доб. 5303</span>
+              </a>
+            </div>
+            <div class="address__item">
+              <a
+                class="address__item-link"
+                href="mailto:triumf@mos.ru"
+                rel="noopener nofollow"
+              >
+                <span
+                  class="address__item-icon icon icon--type-envelope"
+                ></span>
+                <span>triumf@mos.ru</span>
+              </a>
+            </div>
+            <div class="address__item">
+              <p class="address__item-title">
+                <span class="address__item-label">Сайт:</span>
+                <a
+                  class="address__item-link address__item-link--acent"
+                  href="https://mso.mossport.ru/"
+                  rel="noopener nofollow"
+                >
+                  https://mso.mossport.ru/
+                </a>
+              </p>
+            </div>
+          </address>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>
