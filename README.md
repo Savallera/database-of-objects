@@ -15,6 +15,7 @@
 
 Карта объекта
 
+* [Формирование отчета](https://savallera.github.io/database-of-objects/report.html)
 * [Общая информация](https://savallera.github.io/database-of-objects/main-info.html)
 * [Фотографии](https://savallera.github.io/database-of-objects/gallery.html)
 * [Спортзоны](https://savallera.github.io/database-of-objects/sport-zones.html)
