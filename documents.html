@@ -42,12 +42,11 @@
         >
       </li>
       <li class="header__menu-item">
-        <button
-          type="button"
-          class="button button--theme-grey button--size-sm header__menu-button"
-        >
-          <span class="button__text">Сформировать отчет</span>
-        </button>
+        <a
+        class="button button--theme-grey button--size-sm header__menu-button"
+        href="./report.html"
+        ><span class="button__text">Сформировать отчет</span></a
+      >
       </li>
       <li class="header__menu-item">
         <a
@@ -185,17 +184,115 @@
               ></span>
             </button>
             <div class="accordion__section">
-              <ul class="data-list">
-                <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Выписка из ЕГРН</a>
-                </li>
-                <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Распоряжение Департамента городского имущества города Москвы</a>
-                </li>
-                <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Акт приема-передачи</a>
-                </li>
-              </ul>
+              <div class="accordion">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Выписка из ЕГРН</span>
+                  <span
+                    class="accordion__button-icon icon icon--type-drop-down"
+                  ></span>
+                </button>
+                <div class="accordion__section accordion__section--indent-start">
+                  <ul class="data-list">
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document data-list__link--color-secondary"
+                        >Выписка из ЕГРН 1</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document data-list__link--color-secondary"
+                        >Выписка из ЕГРН 2</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document data-list__link--color-secondary"
+                        >Выписка из ЕГРН 3</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document data-list__link--color-secondary"
+                        >Выписка из ЕГРН 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Распоряжение Департамента городского имущества города
+                    Москвы</span>
+                  <span
+                    class="accordion__button-icon icon icon--type-drop-down"
+                  ></span>
+                </button>
+                <div class="accordion__section accordion__section--indent-start">
+                  <ul class="data-list">
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Распоряжение Департамента 1</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Распоряжение Департамента 2</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Распоряжение Департамента 3</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Распоряжение Департамента 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text">Акт приема-передачи</span>
+                  <span
+                    class="accordion__button-icon icon icon--type-drop-down"
+                  ></span>
+                </button>
+                <div class="accordion__section accordion__section--indent-start">
+                  <ul class="data-list">
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Акт приема-передачи 1</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Акт приема-передачи 2</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Акт приема-передачи 3</a
+                      >
+                    </li>
+                    <li class="data-list__item">
+                      <a href="#" rel="ugs noopener" class="data-list__link data-list__link--type-document"
+                        >Акт приема-передачи 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="accordion">
@@ -212,35 +309,17 @@
             <div class="accordion__section">
               <ul class="data-list">
                 <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">План БТИ</a>
+                  <a href="#" class="data-list__link" rel="noopener"
+                    >План БТИ</a
+                  >
                 </li>
                 <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Технический паспорт</a>
+                  <a href="#" class="data-list__link" rel="noopener"
+                    >Технический паспорт</a
+                  >
                 </li>
                 <li class="data-list__item">
                   <a href="#" class="data-list__link" rel="noopener">Проект</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="accordion">
-            <button
-              type="button"
-              class="accordion__button"
-              onclick="toggleAccordion(this)"
-            >
-              <span class="accordion__button-text">Ремонт</span>
-              <span
-                class="accordion__button-icon icon icon--type-drop-down"
-              ></span>
-            </button>
-            <div class="accordion__section">
-              <ul class="data-list">
-                <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Проект</a>
-                </li>
-                <li class="data-list__item">
-                  <a href="#" class="data-list__link" rel="noopener">Концепция</a>
                 </li>
               </ul>
             </div>
@@ -250,17 +329,6 @@
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
 <script src="./scripts/index.js" defer></script>
-<!-- Прелоадер на страницы -->
-<template class="preloader-template">
-  <div class="preloader preloader--place-page">
-    <div class="preloader__chasing-squares">
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-    </div>
-  </div>
-</template>
 
   </body>
 </html>

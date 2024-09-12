@@ -42,12 +42,11 @@
         >
       </li>
       <li class="header__menu-item">
-        <button
-          type="button"
-          class="button button--theme-grey button--size-sm header__menu-button"
-        >
-          <span class="button__text">Сформировать отчет</span>
-        </button>
+        <a
+        class="button button--theme-grey button--size-sm header__menu-button"
+        href="./report.html"
+        ><span class="button__text">Сформировать отчет</span></a
+      >
       </li>
       <li class="header__menu-item">
         <a
@@ -174,7 +173,9 @@
           <div class="tab">
             <ul class="tab__list">
               <li class="tab__item">
-                <a href="#" class="tab__link tab__link--actived" rel="ugs">2022</a>
+                <a href="#" class="tab__link tab__link--actived" rel="ugs"
+                  >2022</a
+                >
               </li>
               <li class="tab__item">
                 <a href="#" class="tab__link" rel="ugs">2018</a>
@@ -188,38 +189,87 @@
         <section class="content__body" aria-label="Ремонт">
           <ul class="data-list">
             <li class="data-list__item">
-              <span class="data-list__label">Тип ремонта:</span>
-              <span class="data-list__text">Комплексный</span>
+              <span class="data-list__label">Техническое состояние:</span>
+              <span class="data-list__text">Не требуется ремонт</span>
             </li>
             <li class="data-list__item">
-              <span class="data-list__label">Статус ремонта:</span>
-              <span class="data-list__text">Завершен</span>
-            </li>
-            <li class="data-list__item">
-              <span class="data-list__label">Начало работ:</span>
-              <span class="data-list__text">01.08.2022</span>
-            </li>
-            <li class="data-list__item">
-              <span class="data-list__label">Окончание работ:</span>
-              <ul class="data-list__text data-list__text--content-list-bullet">
-                <li>Облицовка фасада</li>
-                <li>Ремонт кровли</li>
-                <li>Ремонт инженерных систем</li>
-                <li>Замена остекления</li>
-                <li>Отделка внутренних помещений</li>
+              <span class="data-list__label">
+                Примечание к техническому состоянию:</span
+              >
+              <ul class="data-list__text data-list__text--content-list">
+                <li>
+                  <span class="data-list__label">Статус ремонтных работ:</span>
+                  <span class="data-list__text">Завершены</span>
+                </li>
+                <li>
+                  <span class="data-list__label">Дата начала работ:</span>
+                  <span class="data-list__text">01.08.2022</span>
+                </li>
+                <li>
+                  <span class="data-list__label">Дата окончания работ:</span>
+                  <span class="data-list__text">15.03.2023</span>
+                </li>
+                <li>
+                  <span class="data-list__label"
+                    >Исполнитель ремонтных работ:</span
+                  >
+                  <span class="data-list__text">АНО "Мосспортразвитие"</span>
+                </li>
+                <li>
+                  <span class="data-list__label">Тип ремонта:</span>
+                  <span class="data-list__text"
+                    >Комплексный капитальный ремонт</span
+                  >
+                </li>
               </ul>
             </li>
             <li class="data-list__item">
-              <span class="data-list__label">Исполнитель:</span>
-              <span class="data-list__text">АНО «Мосспортразвитие»</span>
+              <span class="data-list__label">Объем работ:</span>
+              <span class="data-list__text"
+                >Фасады
+                <span class="data-list__sub-text">Оштукатуривание</span></span
+              >
             </li>
             <li class="data-list__item">
-              <span class="data-list__label">Программа развития:</span>
-              <span class="data-list__text">Программа 100</span>
+              <span class="data-list__label"> Примечание к объему работ:</span>
+              <ul class="data-list__text data-list__text--content-list">
+                <li>
+                  <span class="data-list__label">Объем работ:</span>
+                  <span class="data-list__text"
+                    >Инженерные системы
+                    <span class="data-list__sub-text"
+                      >Электроснабжение; Водоснабжение; Канализация</span
+                    ></span
+                  >
+                </li>
+              </ul>
             </li>
             <li class="data-list__item">
-              <span class="data-list__label">Соответствие брендбуку:</span>
-              <span class="data-list__text">да</span>
+              <span class="data-list__label"> Примечание к объему работ:</span>
+              <ul class="data-list__text data-list__text--content-list">
+                <li>
+                  <span class="data-list__label"
+                    >Концепция развития объекта/территории:</span
+                  >
+                  <a
+                    href="#"
+                    rel="ugs noopener"
+                    class="data-list__link data-list__link--type-document"
+                    >Разработана</a
+                  >
+                </li>
+                <li>
+                  <span class="data-list__label"
+                    >Проект развития объекта/территории:</span
+                  >
+                  <a
+                    href="#"
+                    rel="ugs noopener"
+                    class="data-list__link data-list__link--type-document"
+                    >Разработан</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
@@ -227,17 +277,6 @@
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
 <script src="./scripts/index.js" defer></script>
-<!-- Прелоадер на страницы -->
-<template class="preloader-template">
-  <div class="preloader preloader--place-page">
-    <div class="preloader__chasing-squares">
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-    </div>
-  </div>
-</template>
 
   </body>
 </html>

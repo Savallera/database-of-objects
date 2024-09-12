@@ -27,7 +27,11 @@
       <main class="auth__content">
         <form class="auth__form" name="auth-form" action="">
           <a href="./" class="auth__logo-link" rel="ugs">
-            <img src="./images/logo.svg" class="auth__logo" alt="Логотип департамента спорта города Москвы" />
+            <img
+              src="./images/logo.svg"
+              class="auth__logo"
+              alt="Логотип департамента спорта города Москвы"
+            />
           </a>
           <h1 class="page__heading page__heading--place-auth">
             База данных <br />
@@ -63,17 +67,15 @@
             </div>
           </div>
           <div class="auth__form-group">
-            <div class="checkbox">
+            <label class="auth__label">
               <input
                 type="checkbox"
-                class="checkbox__input"
                 name="auth-show-password"
-                id="auth-show-password"
+                class="auth__checkbox"
               />
-              <label for="auth-show-password" class="checkbox__label">
-                Показать пароль
-              </label>
-            </div>
+              <span class="auth__pseudo-checkbox"></span>
+              <span class="auth__label-text">Показать пароль</span>
+            </label>
             <a href="./resume.html" class="auth__link" rel="noopener ugs"
               >Восстановить пароль</a
             >
@@ -89,17 +91,6 @@
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
 <script src="./scripts/index.js" defer></script>
-<!-- Прелоадер на страницы -->
-<template class="preloader-template">
-  <div class="preloader preloader--place-page">
-    <div class="preloader__chasing-squares">
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-    </div>
-  </div>
-</template>
 
   </body>
 </html>

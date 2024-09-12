@@ -1,0 +1,2272 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://test.ru" />
+  <meta property="og:image" content="./images/images/social-image.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="robots" content="index, follow" />
+  <meta name="copyright" content="https://test.ru" />
+  <link rel="icon" href="./images/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png" />
+  <title>Карточка объекта - Формирование отчета</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/libs/splide.min.css" />
+  <link rel="stylesheet" href="./styles/styles.min.css" />
+</head>
+
+  <body>
+    <div class="page">
+      <header class="page__header header">
+  <a class="header__logo-link">
+    <img
+      src="./images/header__logo.svg"
+      alt="Логотип"
+      class="header__logo"
+    />
+  </a>
+  <nav class="header__menu">
+    <ul class="header__menu-list">
+      <li class="header__menu-item">
+        <a
+          class="button button--theme-main button--size-sm header__menu-button"
+          href="./"
+          ><span class="button__text">Вернуться на главную</span></a
+        >
+      </li>
+      <li class="header__menu-item">
+        <a
+        class="button button--theme-grey button--size-sm header__menu-button"
+        href="./report.html"
+        ><span class="button__text">Сформировать отчет</span></a
+      >
+      </li>
+      <li class="header__menu-item">
+        <a
+          class="header__menu-link header__menu-link--actived"
+          href="./main-info.html"
+          rel="noopener ugc"
+        >
+          <span
+            class="header__menu-link-icon icon icon--type-info-rectangle"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Общая информация</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./gallery.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-image"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Фотографии</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./sport-zones.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-building"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Спортзоны</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./services.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-wrench"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Ремонт</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./technical-rating.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-settings"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text"
+            >Рейтинг технического состояния</span
+          >
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./monitoring.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-structure"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Мониторинг проверок</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./territory.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-location-in-map"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Территория</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./contacts.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-user"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Контакты</span>
+        </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="./documents.html" rel="noopener ugc">
+          <span
+            class="header__menu-link-icon icon icon--type-document"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Документы</span>
+        </a>
+      </li>
+      <li class="header__menu-item header__menu-item--content-exit">
+        <a
+          class="header__menu-link"
+          href="./auth.html"
+          rel="noopener ugc"
+        >
+          <span
+            class="header__menu-link-icon icon icon--type-exit"
+            aria-hidden="true"
+          ></span>
+          <span class="header__menu-link-text">Выход</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    type="button"
+    class="header__mobile-menu-button"
+    aria-label="Мобильное меню"
+  >
+    <div class="header__mobile-menu-button-item"></div>
+  </button>
+</header>
+      <main class="page__content content">
+        <header class="search">
+          <form class="search__form" name="search">
+            <fieldset class="search__fieldset search__fieldset--content-title">
+              <h1 class="page__heading search__heading">Формирование отчета</h1>
+              <button
+                type="button"
+                class="button button--theme-main button--size-sm search__button search__button--place-title search__button--content-objects"
+              >
+                <span class="button__text">Объекты</span>
+              </button>
+              <button
+                type="button"
+                class="button button--theme-grey button--size-sm search__button search__button--place-title"
+              >
+                <span class="button__text">Спортивные зоны</span>
+              </button>
+            </fieldset>
+            <fieldset class="search__fieldset">
+              <button
+                type="button"
+                class="button button--theme-light-grey button--size-xs search__button"
+              >
+                <span class="button__icon icon icon--type-copy"></span>
+                <span class="button__text">Excel</span>
+              </button>
+              <button
+                type="button"
+                class="button button--theme-light-secondary button--size-xs search__button"
+              >
+                <span class="button__icon icon icon--type-refresh"></span>
+                <span class="button__text">Обновить</span>
+              </button>
+              <div
+                class="field field--size-sm field--theme-grey search__field"
+                aria-label="Поиск"
+              >
+                <div class="field__inner">
+                  <span class="field__label-icon icon icon--type-search"></span>
+                  <input
+                    type="search"
+                    class="field__input"
+                    name="search"
+                    id="search"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="search__icon-button icon-button icon icon--type-filter"
+                aria-label="Фильтр"
+              ></button>
+            </fieldset>
+            <button
+              type="reset"
+              class="button button--theme-main-text button--size-sm search__reset-button"
+            >
+              <span class="button__text">Сбросить все</span>
+            </button>
+          </form>
+          <div class="search__result-container">
+            <div class="search__result-item">
+              <h2 class="search__result-title">1</h2>
+              <p class="search__result-text">количество объектов</p>
+            </div>
+            <div class="search__result-item">
+              <h2 class="search__result-title">3</h2>
+              <p class="search__result-text">количество спортзон</p>
+            </div>
+            <div class="search__result-item">
+              <h2 class="search__result-title">1 661 м<sup>2</sup></h2>
+              <p class="search__result-text">общая площадь крытых помещений</p>
+            </div>
+            <div class="search__result-item">
+              <h2 class="search__result-title">13</h2>
+              <p class="search__result-text">
+                лет средний возраст спортобъектов
+              </p>
+            </div>
+          </div>
+        </header>
+        <section class="content__body table-wrap">
+          <table class="table">
+            <thead class="table__thead">
+              <tr>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Краткое название объекта
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    ID объекта в ИАС Спорт
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Тип объекта
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Статус объекта
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Капитальный/некапитальный
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Назначение объекта
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Округ
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Район
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Организация Балансодержатель
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell--place-heading table__cell-border"
+                  >
+                    Общая площадь крытых помещений
+                    <div class="table__cell-controls">
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-sort-long"
+                        aria-label="Сортировка"
+                      ></button>
+                      <button
+                        type="button"
+                        class="table__cell-icon icon-button icon icon--type-filter"
+                        aria-label="Фильтр"
+                      ></button>
+                    </div>
+                  </span>
+                </th>
+                <th>
+                  <span
+                    class="table__cell table__cell-border table__cell--place-heading table__cell--content-settings"
+                  >
+                    <button
+                      type="button"
+                      class="table__cell-icon icon-button icon icon--type-settings"
+                      aria-label="Настройка"
+                    ></button>
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__tbody">
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="table__cell table__cell-accent table__cell-border"
+                  >
+                    Спортивный комплекс «Триумф»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 108294 </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Физкультурно-оздоровительный комплекс
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Функционирует
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Капитальный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Спортивный
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> СЗАО </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    Покровское- Стрешнево
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border">
+                    ГБУ «МосСпортОбъект»
+                  </span>
+                </td>
+                <td>
+                  <span class="table__cell table__cell-border"> 1 660,92 </span>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/libs/splide.min.js"></script>
+<script src="./scripts/index.js" defer></script>
+
+    <div class="modal modal--content-objects">
+  <div class="modal__container">
+    <button
+      type="reset"
+      class="modal__close-button icon-button icon icon--type-close"
+      aria-label="Закрыть"
+    ></button>
+    <p class="modal__title">Объекты</p>
+    <form class="filters" name="objects" action="">
+      <div class="filters__content">
+        <div class="accordion accordion--opened filters__accordion">
+          <div class="accordion__button filters__accordion-button">
+            <label class="filters__label">
+              <input
+                type="checkbox"
+                name="checkbox-accordion-01"
+                class="filters__checkbox"
+              />
+              <span
+                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+              ></span>
+              <span class="accordion__button-text">Объект</span>
+            </label>
+            <button
+              type="button"
+              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
+              onclick="toggleAccordion(this)"
+              aria-label="Развернуть"
+            ></button>
+          </div>
+          <div class="accordion__section filters__accordion-section">
+            <ul class="filters__list">
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-01"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text"
+                    >Идентификатор спортивного объекта</span
+                  >
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-02"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text"
+                    >Краткое название спортивного объекта</span
+                  >
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип объекта</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Назначение объекта</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Регион</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Округ</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Район</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Адрес</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Вид собственности</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Ведомственная принадлежность-организация</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Организация Балансодержатель</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Статус объекта</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Дата ввода в эксплуатацию</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Характеристики</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion accordion--opened filters__accordion">
+          <div class="accordion__button filters__accordion-button">
+            <label class="filters__label">
+              <input
+                type="checkbox"
+                name="checkbox-accordion-02"
+                class="filters__checkbox"
+              />
+              <span
+                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+              ></span>
+              <span class="accordion__button-text">Спортивная зона</span>
+            </label>
+            <button
+              type="button"
+              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
+              onclick="toggleAccordion(this)"
+              aria-label="Развернуть"
+            ></button>
+          </div>
+          <div class="accordion__section filters__accordion-section">
+            <ul class="filters__list">
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-01"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text"
+                    >Реестровый номер спортивной зоны</span
+                  >
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-02"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text"
+                    >Тип спортивной зоны</span
+                  >
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Назначение спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Статус функционирования спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Свойства спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Площадь спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Длина спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Ширина спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Глубина спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Высота спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Группа спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Единовременная пропускная способность (ЕПС)</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Вместимость трибун у спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Наличие освещения у спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Эксплуатируется (сезон)</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип покрытия спортивной зоны</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Форма посещения (платность)</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Доступность для сторонних посетителей</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Приспособленность для инвалидов</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Количество подъемников</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип спортивной зоны в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Длина в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Ширина в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип покрытия спортивной зоны в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Требуется актуализация</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="filters__controls">
+        <button
+          type="button"
+          class="button button--theme-main button--size-sm filters__button"
+        >
+          <span class="button__text">Выбрать все</span>
+        </button>
+        <button
+          type="reset"
+          class="button button--theme-grey button--size-sm filters__button"
+        >
+          <span class="button__text">Сбросить все</span>
+        </button>
+        <button
+          type="button"
+          class="button button--theme-outline button--size-sm filters__button"
+        >
+          <span class="button__text">Сохранить набор фильтров</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </body>
+</html>

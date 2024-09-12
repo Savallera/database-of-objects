@@ -42,12 +42,11 @@
         >
       </li>
       <li class="header__menu-item">
-        <button
-          type="button"
-          class="button button--theme-grey button--size-sm header__menu-button"
-        >
-          <span class="button__text">Сформировать отчет</span>
-        </button>
+        <a
+        class="button button--theme-grey button--size-sm header__menu-button"
+        href="./report.html"
+        ><span class="button__text">Сформировать отчет</span></a
+      >
       </li>
       <li class="header__menu-item">
         <a
@@ -229,7 +228,7 @@
             class="main-info__column main-info__column--content-data"
             aria-label="Данные"
           >
-            <ul class="data-list">
+            <ul class="data-list data-list--fs-sm">
               <li class="data-list__item">
                 <span class="data-list__label">Реестровый номер:</span>
                 <span class="data-list__text">108294</span>
@@ -241,6 +240,22 @@
               <li class="data-list__item">
                 <span class="data-list__label">Балансодержатель:</span>
                 <span class="data-list__text">ГБУ «Мосспортобъект»</span>
+              </li>
+              <li class="data-list__item">
+                <span class="data-list__label">Управляющая (эксплуатирующая) компания:</span>
+                <span class="data-list__text">ООО Спорт плюс</span>
+              </li>
+              <li class="data-list__item">
+                <span class="data-list__label">Основание:</span>
+                <span class="data-list__text">Договор льготной аренды (1484-ПП)</span>
+              </li>
+              <li class="data-list__item">
+                <span class="data-list__label">Дата начала аренды:</span>
+                <span class="data-list__text">01.09.2022</span>
+              </li>
+              <li class="data-list__item">
+                <span class="data-list__label">Дата окончания аренды:</span>
+                <span class="data-list__text">01.09.2052</span>
               </li>
               <li class="data-list__item">
                 <span class="data-list__label">Тип объекта:</span>
@@ -286,9 +301,15 @@
               </li>
               <li class="data-list__separator" aria-hidden="true"></li>
               <li class="data-list__item">
-                <span class="data-list__label">Характеристики:</span>
+                <span class="data-list__label">Назначение</span>
                 <ul class="data-list__text data-list__text--content-list">
                   <li>Спортивный</li>
+                </ul>
+              </li>
+              <li class="data-list__separator" aria-hidden="true"></li>
+              <li class="data-list__item">
+                <span class="data-list__label">Характеристики:</span>
+                <ul class="data-list__text data-list__text--content-list">
                   <li>Крытый</li>
                   <li>Капитальный</li>
                   <li>Отдельно-стоящее здание</li>
@@ -298,7 +319,52 @@
                   <li>АИП</li>
                 </ul>
               </li>
+              <li class="data-list__separator" aria-hidden="true"></li>
+              <li class="data-list__item">
+                <span class="data-list__label">Программа строительства</span>
+                <ul class="data-list__text data-list__text--content-list">
+                  <li>АИП</li>
+                </ul>
+              </li>
+              <li class="data-list__separator" aria-hidden="true"></li>
+              <li class="data-list__item">
+                <span class="data-list__label">Соответствие объекта брендбуку</span>
+                <ul class="data-list__text data-list__text--content-list">
+                  <li>Да</li>
+                </ul>
+              </li>
+              <li class="data-list__separator" aria-hidden="true"></li>
+              <li class="data-list__item">
+                <span class="data-list__label">Принадлежность к спортивной территории</span>
+                <ul class="data-list__text data-list__text--content-list">
+                  <li>Нет</li>
+                </ul>
+              </li>
             </ul>
+          </div>
+          <div class="main-info__column main-info__column--content-asside">
+            <div>
+              <h2 class="content__data-title">Свойства</h2>
+              <ul class="data-list data-list--fs-sm data-list--bullet">
+                <li class="data-list__item">Раздевалка (40 мест)</li>
+                <li class="data-list__item">Гардероб (40 мест)</li>
+                <li class="data-list__item">Душ</li>
+                <li class="data-list__item">Охрана объекта</li>
+                <li class="data-list__item">Автомобильная парковка (40 мест)</li>
+                <li class="data-list__item">
+                  Остановки городского общественного транспорта
+                </li>
+                <li class="data-list__item">Туалет</li>
+                <li class="data-list__item">Wi-Fi</li>
+                <li class="data-list__item">Медпункт</li>
+                <li class="data-list__item">
+                  Приспособлен для посещений инвалидами
+                </li>
+                <li class="data-list__item">Звуковое сопровождение</li>
+                <li class="data-list__item">Банкомат</li>
+                <li class="data-list__item">Техсервис</li>
+              </ul>
+            </div>
             <div class="rating">
               <div class="rating__group">
                 <p class="rating__count">5,0</p>
@@ -323,44 +389,11 @@
               <p class="rating__text">Рейтинг технического состояния объекта</p>
             </div>
           </div>
-          <div class="main-info__column main-info__column--content-asside">
-            <h2 class="content__data-title">Свойства</h2>
-            <ul class="data-list data-list--fs-sm data-list--bullet">
-              <li class="data-list__item">Раздевалка (40 мест)</li>
-              <li class="data-list__item">Гардероб (40 мест)</li>
-              <li class="data-list__item">Душ</li>
-              <li class="data-list__item">Охрана объекта</li>
-              <li class="data-list__item">Автомобильная парковка (40 мест)</li>
-              <li class="data-list__item">
-                Остановки городского общественного транспорта
-              </li>
-              <li class="data-list__item">Туалет</li>
-              <li class="data-list__item">Wi-Fi</li>
-              <li class="data-list__item">Медпункт</li>
-              <li class="data-list__item">
-                Приспособлен для посещений инвалидами
-              </li>
-              <li class="data-list__item">Звуковое сопровождение</li>
-              <li class="data-list__item">Банкомат</li>
-              <li class="data-list__item">Техсервис</li>
-            </ul>
-          </div>
         </section>
       </main>
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
 <script src="./scripts/index.js" defer></script>
-<!-- Прелоадер на страницы -->
-<template class="preloader-template">
-  <div class="preloader preloader--place-page">
-    <div class="preloader__chasing-squares">
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-      <div class="preloader__square"></div>
-    </div>
-  </div>
-</template>
 
   </body>
 </html>

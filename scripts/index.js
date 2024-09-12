@@ -1,6 +1,6 @@
 
 function toggleAccordion(target) {
-  let container = target.parentElement;
+  let container = target.closest('.accordion');
   let section = container.lastElementChild;
   let transitionDuration =
     parseFloat(getComputedStyle(section)['transitionDuration']) * 1000;
@@ -111,21 +111,44 @@ header.addEventListener('click', (evt) => {
   }
 });
 
-/* Прелодер на страницы */
-const preloaderTmp = document.querySelector('.preloader-template');
-const page = document.querySelector('.page');
-function showPreloader(tmp, parent) {
-  const node = tmp.content.cloneNode(true);
-  parent.append(node);
-}
-function removePreloader(parent, preloaderSelector) {
-  const preloader = parent.querySelector(preloaderSelector);
-  if (preloader) {
-    preloader.remove();
-  }
+if (document.querySelector('.search__button--content-objects')) {
+  const objectsButton = document.querySelector(
+    '.search__button--content-objects'
+  );
+  const objectsModal = document.querySelector('.modal--content-objects');
+  const openObjectsModal = function () {
+    objectsModal.classList.add('modal--opened');
+  };
+  const closeObjectsModal = function () {
+    objectsModal.classList.remove('modal--opened');
+  };
+
+  objectsButton.addEventListener('click', openObjectsModal);
+  objectsModal.addEventListener('click', (evt) => {
+    if (
+      evt.target.classList.contains('modal--content-objects') ||
+      evt.target.classList.contains('modal__close-button')
+    ) {
+      closeObjectsModal();
+    }
+  });
 }
 
-showPreloader(preloaderTmp, page);
-setTimeout(() => {
-  removePreloader(page, '.preloader');
-}, 1200);
+/* Прелодер на страницы */
+// const preloaderTmp = document.querySelector('.preloader-template');
+// const page = document.querySelector('.page');
+// function showPreloader(tmp, parent) {
+//   const node = tmp.content.cloneNode(true);
+//   parent.append(node);
+// }
+// function removePreloader(parent, preloaderSelector) {
+//   const preloader = parent.querySelector(preloaderSelector);
+//   if (preloader) {
+//     preloader.remove();
+//   }
+// }
+
+// showPreloader(preloaderTmp, page);
+// setTimeout(() => {
+//   removePreloader(page, '.preloader');
+// }, 1200);
