@@ -11,6 +11,33 @@
     }
   }
 
+  &__result-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+  &__result-item {
+    // flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5em;
+
+    @include media(sm) {
+      flex-wrap: nowrap;
+      align-items: flex-end;
+    }
+  }
+  &__result-title {
+    flex: none;
+    font-size: 1.5em;
+    font-variation-settings: 'wght' 700;
+  }
+  &__result-text {
+    flex: auto;
+    line-height: 1.5;
+  }
+
   &__fieldset {
     padding: 0;
     margin: 0;

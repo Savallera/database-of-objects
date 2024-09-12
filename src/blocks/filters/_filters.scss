@@ -1,13 +1,21 @@
 .filters {
+  flex: auto;
+  block-size: 100%;
+  min-block-size: 20em;
+  overflow: hidden;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+
   &__content {
-    max-block-size: 80vh;
+    flex: auto;
     overflow-y: auto;
   }
 
-  &__accordion {
-    &:not(:last-child) {
-      margin-block-end: 1.5em;
-    }
+  // &__accordion {}
+
+  &__accordion-section {
+    margin-block-end: 1.5em;
   }
 
   &__accordion-button {
@@ -30,6 +38,7 @@
   &__list {
     @extend %reset-list;
   }
+
   &__item {
     &:not(:last-child) {
       margin-block-end: 0.5rem;
@@ -72,6 +81,7 @@
   }
 
   &__controls {
+    flex: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,6 +89,14 @@
   }
 
   &__button {
-    max-inline-size: 17em;
+    flex: 1 0 min(15em, 48%);
+    @include media(sm) {
+      flex: auto;
+      max-inline-size: 17em;
+    }
+  }
+
+  @include media(sm) {
+    max-block-size: 80vh;
   }
 }
