@@ -1,0 +1,120 @@
+.monitoring {
+  background-color: var(--bg-secondary-color, #dedfe3);
+  border-radius: var(--box-radius, 12px);
+
+  &__inner {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    @include media(xl, max) {
+      gap: 1em;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    @include media(xl, max) {
+      gap: 1em;
+    }
+  }
+
+  &__header-item {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em 0.875em;
+    border-radius: var(--box-radius, 12px);
+    background-color: #fff;
+
+    &--content-main-rating {
+      flex-direction: column;
+      background-color: var(--main-color, #e22b36);
+      color: var(--text-accent-color, #fff);
+
+      @include media(sm) {
+        flex-direction: row;
+        flex: 0 1 min(20em, 38%);
+      }
+    }
+
+    @include media(sm) {
+      flex: 0 1 min(15em, 18%);
+    }
+
+    @include media(xxl) {
+      flex: 1 1 min(15em, 18%);
+    }
+  }
+
+  &__label {
+    font-size: 0.75em;
+    font-variation-settings: 'wght' 600;
+  }
+
+  &__rate {
+    font-size: 2.25em;
+    font-variation-settings: 'wght' 600;
+  }
+
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+
+    @include media(xl, max) {
+      gap: 1em;
+    }
+  }
+
+  &__column {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    // &--content-vertical-chart {}
+
+    @include media(sm) {
+      flex: 1 1 min(20em, 40%);
+
+      &--content-vertical-chart {
+          flex: none;
+      }
+    }
+
+    @include media(xl, max) {
+      gap: 1em;
+    }
+  }
+
+  &__caption {
+    font-size: 0.75em;
+    line-height: 1.5;
+    font-variation-settings: 'wght' 600;
+  }
+
+  &__caption-link {
+    padding: 0.25em 0.375em;
+    border-radius: 5px;
+    background-color: var(--grey-200, #d9d9d9);
+    font-variation-settings: 'wght' 400;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
+    &:hover {
+      background-color: var(--grey-300, #a7aab4);
+    }
+  }
+}

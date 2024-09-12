@@ -1,0 +1,84 @@
+.filters {
+  &__content {
+    max-block-size: 80vh;
+    overflow-y: auto;
+  }
+
+  &__accordion {
+    &:not(:last-child) {
+      margin-block-end: 1.5em;
+    }
+  }
+
+  &__accordion-button {
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+
+    &:active {
+      transform: unset;
+    }
+  }
+
+  &__accordion-button-icon {
+    flex: none;
+    @include box(1.25em);
+    color: var(--text-low-color, #595d69);
+  }
+
+  &__list {
+    @extend %reset-list;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-block-end: 0.5rem;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    &:has(:focus-visible) {
+      outline: 2px solid var(--text-color, #272b37);
+    }
+    &:hover .filters__pseudo-checkbox {
+      color: var(--bg-tetriary-color, #a7aab4);
+    }
+  }
+
+  &__checkbox {
+    @extend %reset-checkbox;
+    display: none;
+
+    &:checked + .filters__pseudo-checkbox {
+      color: var(--main-color, #e22b36);
+    }
+  }
+
+  &__pseudo-checkbox {
+    display: inline-block;
+    @include box(1.5em);
+    min-inline-size: 1.5em;
+    max-inline-size: 1.5em;
+    border-radius: 4px;
+    vertical-align: middle;
+
+    color: var(--bg-secondary-color, #f3f4f6);
+  }
+
+  &__label-text {
+    font-variation-settings: 'wght' 400;
+    font-size: var(--text-font-sm, 0.875em);
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75em;
+  }
+
+  &__button {
+    max-inline-size: 17em;
+  }
+}

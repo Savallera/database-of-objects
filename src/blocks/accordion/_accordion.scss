@@ -37,6 +37,10 @@
 
   &__section {
     display: none;
+
+    &--indent-start {
+      padding-inline-start: 1em;
+    }
   }
 
   &--opened {

@@ -3,40 +3,41 @@
   gap: 1.5em;
 
   &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    flex: auto;
+
     &--content-gallery-map {
-      flex: auto;
-      max-inline-size: min(40em, 45%);
-      display: flex;
-      flex-direction: column;
-      gap: 1.5em;
+      max-inline-size: min(40em, 42%);
 
       @include media(xl, max) {
         max-inline-size: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1em;
       }
     }
 
     &--content-data {
-      flex: auto;
-      max-inline-size: min(35em, 40%);
-      display: flex;
-      flex-direction: column;
-      gap: 1.5em;
+      max-inline-size: min(35em, 33%);
 
       @include media(xl, max) {
-        gap: 1em;
         max-inline-size: unset;
         flex: 1 1 min(18em, 100%);
       }
     }
 
     &--content-asside {
-      flex: auto;
+      max-inline-size: min(18em, 25%);
+
       @include media(xl, max) {
+        max-inline-size: unset;
         flex: 1 1 min(18em, 100%);
       }
+    }
+
+    @include media(xl, max) {
+      gap: 1em;
     }
   }
 

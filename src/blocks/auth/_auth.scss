@@ -83,6 +83,42 @@
     margin-block-start: min(10%, 4rem);
   }
 
+  &__label {
+    cursor: pointer;
+    &:has(:focus-visible) {
+      outline: 2px solid var(--text-color, #272b37);
+    }
+    &:hover .auth__pseudo-checkbox {
+      background-color: var(--text-low-color, #595d69);
+    }
+  }
+
+  &__checkbox {
+    @extend %reset-checkbox;
+    display: none;
+
+    &:checked + .auth__pseudo-checkbox {
+      background-color: var(--main-color, #e22b36);
+    }
+  }
+
+  &__pseudo-checkbox {
+    display: inline-block;
+    @include box(1.875em);
+    min-inline-size: 1.875em;
+    max-inline-size: 1.875em;
+    border-radius: 4px;
+    vertical-align: middle;
+
+    background-color: var(--border-color, #c2c5cb);
+    transition: 0.35s;
+  }
+
+  &__label-text {
+    font-variation-settings: 'wght' 500;
+    font-size: var(--text-font-sm, 0.875em);
+  }
+
   @include media(xl) {
     background-size: 75%;
     align-items: unset;

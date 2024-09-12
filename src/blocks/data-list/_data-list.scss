@@ -31,6 +31,12 @@
     }
   }
 
+  &__sub-text {
+    font-style: italic;
+    display: block;
+    margin-inline-start: min(13em, 13%);
+  }
+
   &__icon {
     flex: none;
     display: block;
@@ -55,6 +61,27 @@
     &:hover {
       text-decoration: underline;
       text-underline-position: under;
+    }
+
+    &--type-document {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375em;
+
+      &::after {
+        content: '';
+        @include box(1.25em);
+        mask-image: url('../images/icons/copy.svg');
+        background-color: currentColor;
+        display: block;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+      }
+    }
+
+    &--color-secondary {
+      color: var(--text-lower-color, #a7aab4);
     }
   }
 

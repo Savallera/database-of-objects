@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Мониторинг проверок"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="content__header">
+          <div class="content__header-main-row">
+            <h1 class="page__heading">СК «Триумф»</h1>
+            <p class="content__header-tag">Функционирует</p>
+            <p class="content__header-date">Дата актуализации 27.09.2023</p>
+            <button
+              type="button"
+              class="content__header-icon-button icon-button icon icon--type-close"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+        </header>
+        <section
+          class="content__body monitoring"
+          aria-label="Мониторинг проверок"
+        >
+          <div class="monitoring__inner">
+            <div class="monitoring__header">
+              <div
+                class="monitoring__header-item monitoring__header-item--content-main-rating"
+              >
+                <h2 class="monitoring__label">Общий рейтинг:</h2>
+                <p class="monitoring__rate">100%</p>
+                <div class="rating rating--place-monitoring">
+                  <div class="rating__stars">
+                    <span
+                      class="rating__star rating__star--actived icon icon--type-rating"
+                    ></span>
+                    <span
+                      class="rating__star rating__star--actived icon icon--type-rating"
+                    ></span>
+                    <span
+                      class="rating__star rating__star--actived icon icon--type-rating"
+                    ></span>
+                    <span
+                      class="rating__star rating__star--actived icon icon--type-rating"
+                    ></span>
+                    <span
+                      class="rating__star rating__star--actived icon icon--type-rating"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="monitoring__header-item">
+                <h3 class="monitoring__label">
+                  Рейтинг санитарного состояния:
+                </h3>
+                <p class="monitoring__rate">100%</p>
+              </div>
+              <div class="monitoring__header-item">
+                <h3 class="monitoring__label">
+                  Рейтинг санитарного состояния:
+                </h3>
+                <p class="monitoring__rate">100%</p>
+              </div>
+              <div class="monitoring__header-item">
+                <h3 class="monitoring__label">
+                  Рейтинг санитарного состояния:
+                </h3>
+                <p class="monitoring__rate">100%</p>
+              </div>
+            </div>
+            <div class="monitoring__columns">
+              <div class="monitoring__column">
+                <h3 class="monitoring__caption">
+                  Активные замечания по группам замечаний
+                  <a href="#" rel="noopener" class="monitoring__caption-link"
+                    >Подробнее</a
+                  >
+                </h3>
+                <div class="chart">
+                  <div class="chart__item">
+                    <p class="chart__label">Санитарные</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Органи&shy;зационные</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Технические</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 50%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="monitoring__column">
+                <h3 class="monitoring__caption">
+                  Активные замечания по подгруппам замечаний
+                  <a href="#" rel="noopener" class="monitoring__caption-link"
+                    >Подробнее</a
+                  >
+                </h3>
+                <div class="chart">
+                  <div class="chart__item">
+                    <p class="chart__label">Внутренние помещения</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Территория</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Фасад</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 50%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Кровля</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 25%"></div>
+                    </div>
+                  </div>
+                  <div class="chart__item">
+                    <p class="chart__label">Кровля</p>
+                    <div class="chart__indicator">
+                      <div class="chart__indicator-item" style="inline-size: 25%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="monitoring__column monitoring__column--content-vertical-chart">
+                <h3 class="monitoring__caption">
+                  Активные замечания по приоритету
+                </h3>
+                <div class="vertical-chart">
+                  <div class="vertical-chart__inner">
+                    <div class="vertical-chart__block">
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">10</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-critical-color"
+                          style="block-size: 10%"
+                        ></div>
+                      </div>
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">1</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-main-color"
+                          style="block-size: 1%"
+                        ></div>
+                      </div>
+                      <p class="vertical-chart__block-label">Критический</p>
+                    </div>
+                    <div class="vertical-chart__block">
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">70</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-high-color"
+                          style="block-size: 70%"
+                        ></div>
+                      </div>
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">2</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-main-color"
+                          style="block-size: 2%"
+                        ></div>
+                      </div>
+                      <p class="vertical-chart__block-label">Высокий</p>
+                    </div>
+                    <div class="vertical-chart__block">
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">30</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-medium-color"
+                          style="block-size: 30%"
+                        ></div>
+                      </div>
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">3</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-main-color"
+                          style="block-size: 3%"
+                        ></div>
+                      </div>
+                      <p class="vertical-chart__block-label">Средний</p>
+                    </div>
+                    <div class="vertical-chart__block">
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">50</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-low-color"
+                          style="block-size: 50%"
+                        ></div>
+                      </div>
+                      <div class="vertical-chart__block-item">
+                        <span class="vertical-chart__block-count">10</span>
+                        <div
+                          class="vertical-chart__block-indicator vertical-chart__indicator-main-color"
+                          style="block-size: 10%"
+                        ></div>
+                      </div>
+                      <p class="vertical-chart__block-label">Низкий</p>
+                    </div>
+                  </div>
+                  <p class="vertical-chart__description">
+                    <span class="vertical-chart__description-block vertical-chart__indicator-main-color"></span>
+                    <span class="vertical-chart__description-text"
+                      >Среднее время устранения, дн.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+  </body>
+</html>

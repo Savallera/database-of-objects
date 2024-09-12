@@ -1,0 +1,94 @@
+.search {
+  &__form {
+    flex: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+
+    @include media(xxl) {
+      grid-template-columns: 1fr auto;
+      gap: 0 1em;
+    }
+  }
+
+  &__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+
+    &--content-title {
+      grid-column: 1/-1;
+
+      @include media(xxl) {
+        grid-column: unset;
+      }
+    }
+
+    @include media(md) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__heading {
+    flex: auto;
+    min-inline-size: 100%;
+    @include media(md) {
+      min-inline-size: unset;
+      flex: none;
+    }
+  }
+
+  &__button {
+    flex: 1 1 calc(100% / 2 - 1em);
+    inline-size: unset;
+
+    // &--place-title {}
+
+    @include media(xs) {
+      flex: auto;
+    }
+
+    @include media(sm) {
+      flex: none;
+    }
+
+    @include media(xl) {
+      &--place-title {
+        inline-size: 13rem;
+      }
+    }
+  }
+
+  &__reset-button {
+    font-variation-settings: 'wght' 600;
+    inline-size: unset;
+    grid-column: 1/-1;
+    justify-self: start;
+    @include media(xxl) {
+      justify-self: end;
+    }
+  }
+
+  &__field {
+    flex: auto;
+
+    @include media(sm) {
+      max-inline-size: 20em;
+    }
+  }
+
+  &__icon-button {
+    flex: none;
+    @include box(2.5em);
+    padding: 0.5em;
+    color: var(--main-color, #e22b36);
+    border-radius: 6px;
+    &:hover {
+      color: var(--text-color, #272b37);
+    }
+  }
+}

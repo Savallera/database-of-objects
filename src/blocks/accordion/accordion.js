@@ -1,5 +1,5 @@
 function toggleAccordion(target) {
-  let container = target.parentElement;
+  let container = target.closest('.accordion');
   let section = container.lastElementChild;
   let transitionDuration =
     parseFloat(getComputedStyle(section)['transitionDuration']) * 1000;

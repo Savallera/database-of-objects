@@ -27,6 +27,9 @@
   &--type-calendar::before {
     mask-image: url('../images/icons.svg#calendar');
   }
+  &--type-checkbox-in-box::before {
+    mask-image: url('../images/icons.svg#checkbox-in-box');
+  }
   &--type-close::before {
     mask-image: url('../images/icons.svg#close');
   }

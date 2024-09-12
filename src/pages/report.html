@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+  @@include("../blocks/head/head.html", {"title": "Карточка объекта - Формирование отчета"})
+  <body>
+    <div class="page">
+      @@include("../blocks/header/header.html")
+      <main class="page__content content">
+        <header class="search">
+          <form class="search__form" name="search">
+            <fieldset class="search__fieldset search__fieldset--content-title">
+              <h1 class="page__heading search__heading">Формирование отчета</h1>
+              <button
+                type="button"
+                class="button button--theme-main button--size-sm search__button search__button--place-title search__button--content-objects"
+              >
+                <span class="button__text">Объекты</span>
+              </button>
+              <button
+                type="button"
+                class="button button--theme-grey button--size-sm search__button search__button--place-title"
+              >
+                <span class="button__text">Спортивные зоны</span>
+              </button>
+            </fieldset>
+            <fieldset class="search__fieldset">
+              <button
+                type="button"
+                class="button button--theme-light-grey button--size-xs search__button"
+              >
+                <span class="button__icon icon icon--type-copy"></span>
+                <span class="button__text">Excel</span>
+              </button>
+              <button
+                type="button"
+                class="button button--theme-light-secondary button--size-xs search__button"
+              >
+                <span class="button__icon icon icon--type-refresh"></span>
+                <span class="button__text">Обновить</span>
+              </button>
+              <div
+                class="field field--size-sm field--theme-grey search__field"
+                aria-label="Поиск"
+              >
+                <div class="field__inner">
+                  <span class="field__label-icon icon icon--type-search"></span>
+                  <input
+                    type="search"
+                    class="field__input"
+                    name="search"
+                    id="search"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="search__icon-button icon-button icon icon--type-filter"
+                aria-label="Фильтр"
+              ></button>
+            </fieldset>
+            <button
+              type="reset"
+              class="button button--theme-main-text button--size-sm search__reset-button"
+            >
+              <span class="button__text">Сбросить все</span>
+            </button>
+          </form>
+        </header>
+        <section class="content__body"></section>
+      </main>
+    </div>
+    @@include("../blocks/footer/footer.html")
+    @@include("../blocks/modal/modal-content-objects.html")
+  </body>
+</html>

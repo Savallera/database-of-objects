@@ -4,7 +4,7 @@
   &__group {
     display: flex;
     align-items: center;
-    gap: .75em;
+    gap: 0.75em;
   }
 
   &__count {
@@ -26,9 +26,16 @@
       color: var(--main-color, #e22b36);
     }
   }
-
   &__text {
     color: var(--text-lower-color, #a7aab4);
     line-height: 1.5;
+  }
+
+  &--place-monitoring {
+    inline-size: unset;
+    flex: auto;
+    .rating__star--actived {
+      color: var(--icon-accent-color, #ffffff);
+    }
   }
 }

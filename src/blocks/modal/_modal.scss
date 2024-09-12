@@ -1,0 +1,51 @@
+/* Модальное окно */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  inline-size: 100%;
+  block-size: 100%;
+  min-block-size: 100vh;
+  overflow-y: auto;
+
+  display: flex;
+  padding: 1em;
+
+  backdrop-filter: blur(18px);
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition:
+    visibility 0s 0.35s,
+    opacity 0.35s;
+
+  &__container {
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 1.5em 4em 1.5em 1.5em;
+  }
+
+  &__close-button {
+    position: absolute;
+    z-index: 1;
+    inset: 1em 1em auto auto;
+    @include box(2em);
+  }
+
+  &--opened {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    transition:
+      visibility 0s,
+      opacity 0.35s;
+  }
+
+  @supports (min-block-size: 100dvb) {
+    min-block-size: 100dvb;
+  }
+}

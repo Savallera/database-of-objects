@@ -1,0 +1,27 @@
+.chart {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    &:not(:last-child) {
+      margin-block-end: 0.25em;
+    }
+  }
+
+  &__label {
+    flex: 0 0 min(15em, 40%);
+    font-size: 0.75em;
+  }
+
+  &__indicator {
+    flex: auto;
+    block-size: 1.5em;
+  }
+
+  &__indicator-item {
+    block-size: 100%;
+    border-radius: 6px;
+    background-color: var(--main-color, #e22b36);
+  }
+}

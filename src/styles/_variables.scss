@@ -5,8 +5,8 @@
   --grey-500: #717684;
   --grey-400: #8b909c;
   --grey-300: #a7aab4;
-  --grey-200: #c2c5cb;
-  --grey-100: #dedfe3;
+  --grey-200: #d9d9d9;
+  --grey-100: #f3f4f6;
   --white: #fff;
 
   --skeleton-gradient: linear-gradient(
@@ -17,6 +17,7 @@
   );
   --bg-color: var(--white);
   --bg-secondary-color: var(--grey-100);
+  --bg-tetriary-color: var(--grey-200);
   --bg-blur-color: rgb(255 255 255 / 0.8);
 
   --main-color: #e22b36;
@@ -26,8 +27,10 @@
   --text-color: var(--grey-800);
   --text-low-color: var(--grey-600);
   --text-lower-color: var(--grey-300);
+  --text-accent-color: var(--white);
   --border-color: var(--grey-200);
   --icon-color: var(--grey-400);
+  --icon-accent-color: var(--white);
   --error-color: #f14242;
 
   --font-family: Montserrat, sans-serif;
@@ -38,6 +41,12 @@
   --text-font-sm: 0.875em;
 
   --box-radius: 12px;
+
+  --vertical-chart-main-color: #ed7d31;
+  --vertical-chart-critical-color: #272b37;
+  --vertical-chart-high-color: #e22b36;
+  --vertical-chart-medium-color: #fbfc0a;
+  --vertical-chart-low-color: #0071c1;
 
   @include media(xl) {
     --heading-font-xl: 2em;

@@ -11,7 +11,6 @@
 @import '../blocks/icon-button/icon-button';
 @import '../blocks/button/button';
 @import '../blocks/field/field';
-@import '../blocks/checkbox/checkbox';
 @import '../blocks/tab/tab';
 @import '../blocks/accordion/accordion';
 
@@ -26,11 +25,12 @@
 @import '../blocks/main-info/main-info';
 @import '../blocks/gallery/gallery';
 @import '../blocks/technical-rating/technical-rating';
+@import '../blocks/monitoring/monitoring';
 @import '../blocks/territory/territory';
 @import '../blocks/documents/documents';
 
 // Modals
-// @import '../blocks/popup/popup';
+@import '../blocks/modal/modal';
 
 // Blocks
 @import '../blocks/gallery-slider/gallery-slider';
@@ -40,3 +40,7 @@
 @import '../blocks/rating/rating';
 @import '../blocks/card-link/card-link';
 @import '../blocks/address/address';
+@import '../blocks/chart/chart';
+@import '../blocks/vertical-chart/vertical-chart';
+@import '../blocks/search/search';
+@import '../blocks/filters/filters';

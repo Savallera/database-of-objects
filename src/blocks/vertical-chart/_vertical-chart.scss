@@ -1,0 +1,86 @@
+.vertical-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &__inner {
+    flex: auto;
+    display: flex;
+    gap: 1em;
+  }
+
+  &__block {
+    flex: auto;
+    display: grid;
+    gap: 0.375em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__block-item {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 10em;
+  }
+
+  &__block-count {
+    flex: none;
+    margin-block-start: auto;
+    font-size: 0.75em;
+    font-variation-settings: 'wght' 600;
+    text-align: center;
+  }
+
+  &__block-indicator {
+    inline-size: 100%;
+    border-radius: 6px;
+
+    @include media(sm) {
+      @include box(2em, auto);
+    }
+  }
+
+  &__block-label {
+    font-size: 0.625em;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  &__description {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+  }
+
+  &__description-block {
+    flex: none;
+    @include box(1.5em);
+    border-radius: 6px;
+  }
+
+  &__description-text {
+    font-size: 0.625em;
+    font-variation-settings: 'wght' 500;
+  }
+
+  // Цвета
+  &__indicator-main-color {
+    background-color: var(--vertical-chart-main-color, #ed7d31);
+  }
+
+  &__indicator-critical-color {
+    background-color: var(--vertical-chart-critical-color, #272b37);
+  }
+
+  &__indicator-high-color {
+    background-color: var(--vertical-chart-high-color, #e22b36);
+  }
+
+  &__indicator-medium-color {
+    background-color: var(--vertical-chart-medium-color, #fbfc0a);
+  }
+
+  &__indicator-low-color {
+    background-color: var(--vertical-chart-low-color, #0071c1);
+  }
+}
