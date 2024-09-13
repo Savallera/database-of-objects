@@ -6,6 +6,7 @@
   font-size: inherit;
   font-variation-settings: 'wght' 500;
   padding: 1em 0.625rem;
+  border-radius: var(--box-radius, 12px);
   transition:
     background-color 0.35s,
     color 0.35s,
@@ -30,14 +31,14 @@
   &__icon {
     display: inline-block;
     @include box(1.25em);
+    min-inline-size: 1.25em;
+    max-inline-size: 1.25em;
     vertical-align: middle;
   }
 
   &--theme-main {
     background-color: var(--main-color, #e22b36);
     color: var(--text-accent-color, #ffffff);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       background-color: var(--main-color-hover, #c11a24);
@@ -47,8 +48,6 @@
   &--theme-secondary {
     background-color: var(--secondary-color, #4674ff);
     color: var(--text-accent-color, #ffffff);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       background-color: var(--secondary-color-hover, #2353e3);
@@ -58,8 +57,6 @@
   &--theme-light-secondary {
     background-color: var(--bg-secondary-color, #f3f4f6);
     color: var(--secondary-color, #4674ff);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       background-color: var(--bg-tetriary-color, #d9d9d9);
@@ -69,8 +66,6 @@
   &--theme-grey {
     background-color: var(--bg-tetriary-color, #d9d9d9);
     color: var(--text-accent-color, #ffffff);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       background-color: var(--grey-300, #a7aab4);
@@ -80,8 +75,6 @@
   &--theme-light-grey {
     background-color: var(--bg-secondary-color, #f3f4f6);
     color: var(--text-color, #272b37);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       background-color: var(--bg-tetriary-color, #d9d9d9);
@@ -90,8 +83,6 @@
 
   &--theme-main-text {
     color: var(--main-color, #e22b36);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       color: var(--main-color-hover, #c11a24);
@@ -101,8 +92,6 @@
   &--theme-outline {
     border: 1px solid var(--bg-tetriary-color, #d9d9d9);
     color: var(--text-lower-color, #a7aab4);
-    border-radius: var(--box-radius, 12px);
-    inline-size: 100%;
 
     &:hover {
       color: var(--text-low-color, #595d69);

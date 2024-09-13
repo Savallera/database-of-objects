@@ -14,15 +14,17 @@
 
   &__content {
     flex: auto;
-    background-color: var(--bg-color, #fff);
-    border-radius: var(--box-radius, 12px);
-    max-inline-size: 40em;
+    margin: 0.25em;
     padding: clamp(1.5em, 5%, 3em) clamp(2.5em, 8%, 5em);
-    margin: 1em;
+    max-inline-size: 40em;
+    background-color: var(--bg-color, #ffffff);
+    border-radius: var(--box-radius, 12px);
+    box-shadow: var(--card-shadow, 0px 0px 50px #00000040);
 
     @include media(xl) {
       border-radius: 0;
-      margin: unset;
+      box-shadow: none;
+      margin: 0;
       max-inline-size: unset;
       padding-inline: clamp(5em, 15%, 10em);
       display: flex;
@@ -77,9 +79,18 @@
       text-decoration: underline;
       text-underline-position: under;
     }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
   }
 
   &__button {
+    inline-size: 100%;
     margin-block-start: min(10%, 4rem);
   }
 
@@ -110,7 +121,7 @@
     border-radius: 4px;
     vertical-align: middle;
 
-    background-color: var(--border-color, #c2c5cb);
+    background-color: var(--border-color, #d9d9d9);
     transition: 0.35s;
   }
 

@@ -1,54 +1,51 @@
 .monitoring {
-  background-color: var(--bg-secondary-color, #dedfe3);
+  background-color: var(--bg-secondary-color, #f3f4f6);
   border-radius: var(--box-radius, 12px);
 
   &__inner {
-    padding: 1.5em;
+    padding: 0.75em;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 0.75em;
 
-    @include media(xl, max) {
-      gap: 1em;
+    @include media(sm) {
+      padding: 1.5em;
+      gap: 1.5em;
     }
   }
 
   &__header {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 0.75em;
 
-    @include media(xl, max) {
-      gap: 1em;
+    @include media(sm) {
+      gap: 1.5em;
     }
   }
 
   &__header-item {
-    flex: auto;
+    flex: 1 1 min(16em, 20%);
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em 1em;
     padding: 0.5em 0.875em;
     border-radius: var(--box-radius, 12px);
-    background-color: #fff;
+    background-color: #ffffff;
 
     &--content-main-rating {
       flex-direction: column;
       background-color: var(--main-color, #e22b36);
-      color: var(--text-accent-color, #fff);
+      color: var(--text-accent-color, #ffffff);
 
       @include media(sm) {
         flex-direction: row;
-        flex: 0 1 min(20em, 38%);
+        flex: 0 1 min(22em, 38%);
       }
     }
 
     @include media(sm) {
-      flex: 0 1 min(15em, 18%);
-    }
-
-    @include media(xxl) {
-      flex: 1 1 min(15em, 18%);
+      flex-grow: 0;
     }
   }
 
@@ -58,17 +55,21 @@
   }
 
   &__rate {
-    font-size: 2.25em;
+    font-size: 1.875em;
     font-variation-settings: 'wght' 600;
+
+    @include media(sm) {
+      font-size: 2.25em;
+    }
   }
 
   &__columns {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 0.75em;
 
-    @include media(xl, max) {
-      gap: 1em;
+    @include media(sm) {
+      gap: 5%;
     }
   }
 
@@ -76,33 +77,30 @@
     flex: auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 0.75em;
 
     // &--content-vertical-chart {}
 
     @include media(sm) {
-      flex: 1 1 min(20em, 40%);
+      gap: 1.5em;
+      flex-basis: min(20em, 40%);
 
       &--content-vertical-chart {
-          flex: none;
+        flex: none;
       }
-    }
-
-    @include media(xl, max) {
-      gap: 1em;
     }
   }
 
   &__caption {
     font-size: 0.75em;
-    line-height: 1.5;
+    line-height: 1.7;
     font-variation-settings: 'wght' 600;
   }
 
   &__caption-link {
     padding: 0.25em 0.375em;
     border-radius: 5px;
-    background-color: var(--grey-200, #d9d9d9);
+    background-color: var(--bg-tetriary-color, #d9d9d9);
     font-variation-settings: 'wght' 400;
     text-decoration: none;
 

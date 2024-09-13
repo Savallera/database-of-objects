@@ -1,11 +1,12 @@
 .main-info {
   display: flex;
-  gap: 1.5em;
+  flex-wrap: wrap;
+  gap: 0.75em;
 
   &__column {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 0.75em;
     flex: auto;
 
     &--content-gallery-map {
@@ -36,8 +37,8 @@
       }
     }
 
-    @include media(xl, max) {
-      gap: 1em;
+    @include media(sm) {
+      gap: 1.5em;
     }
   }
 
@@ -48,8 +49,11 @@
     }
   }
 
-  @include media(xl, max) {
-    flex-wrap: wrap;
-    gap: 1em;
+  @include media(xl) {
+    gap: 1.5em;
+  }
+
+  @include media(xl) {
+    flex-wrap: nowrap;
   }
 }

@@ -48,8 +48,8 @@
     font-size: inherit;
     color: inherit;
     font-variation-settings: 'wght' 400;
-    background-color: #fff;
-    border: 1px solid var(--border-color, #c2c5cb);
+    background-color: #ffffff;
+    border: 1px solid var(--border-color, #d9d9d9);
     border-radius: var(--box-radius, 12px);
     outline-offset: -2px;
 
@@ -139,7 +139,7 @@
 
   &--state-error {
     .field__input {
-      border-color: var(--error-color, #f14242);
+      border-color: var(--error-color, #e22b36);
     }
     .field__error-text {
       visibility: visible;

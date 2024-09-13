@@ -28,8 +28,8 @@
 
   &__button-icon {
     display: inline-block;
-    min-inline-size: 1.5em;
-    max-inline-size: 1.5em;
+    min-inline-size: 1.25em;
+    max-inline-size: 1.25em;
     @include box(1.25em);
     vertical-align: middle;
     color: inherit;
@@ -61,7 +61,7 @@
 
     .accordion__button-text {
       font-variation-settings: 'wght' 400;
-      font-size: 0.875em;
+      font-size: var(--text-font-sm, 0.875em);
     }
 
     .accordion__button-icon {
