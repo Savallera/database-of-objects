@@ -7,7 +7,7 @@
   gap: 1em;
 
   position: relative;
-  z-index: 20;
+  z-index: 10;
 
   // &__logo-link {}
 
@@ -53,7 +53,7 @@
   }
 
   &__menu-button {
-    max-inline-size: 14em;
+    inline-size: 14em;
   }
 
   &__menu-item {
@@ -152,6 +152,8 @@
   }
 
   &--opened {
+    z-index: 30;
+
     .header__menu {
       visibility: visible;
       opacity: 1;

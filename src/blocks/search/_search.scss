@@ -1,16 +1,18 @@
 .search {
   position: relative;
-  z-index: 10;
+  z-index: 20;
 
   &__form {
     flex: auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1em;
+    gap: 0.75em;
 
+    @include media(sm) {
+      gap: 1em;
+    }
     @include media(xxl) {
       grid-template-columns: 1fr auto;
-      gap: 0 1em;
     }
   }
 
@@ -21,27 +23,29 @@
   }
 
   &__result-item {
-    // flex: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 0.5em;
-
-    @include media(sm) {
-      flex-wrap: nowrap;
-      align-items: flex-end;
-    }
   }
 
   &__result-title {
     flex: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-variation-settings: 'wght' 700;
+
+    @include media(sm) {
+      font-size: 1.5em;
+    }
   }
 
   &__result-text {
     flex: auto;
+    font-size: 0.875em;
     line-height: 1.5;
+    @include media(sm) {
+      font-size: 1em;
+    }
   }
 
   &__fieldset {
@@ -51,7 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1em;
+    gap: 0.75em;
 
     &--content-title {
       grid-column: 1/-1;
@@ -66,32 +70,28 @@
       grid-column: 1/-1;
     }
 
+    @include media(sm) {
+      gap: 1em;
+    }
+
     @include media(md) {
       flex-wrap: nowrap;
     }
   }
 
   &__heading {
-    flex: auto;
+    flex-grow: 0;
     min-inline-size: 100%;
     @include media(md) {
       min-inline-size: unset;
-      flex: none;
     }
   }
 
   &__button {
-    flex: 1 1 calc(100% / 2 - 1em);
-    inline-size: unset;
-
     // &--place-title {}
 
-    @include media(xs) {
-      flex: auto;
-    }
-
-    @include media(sm) {
-      flex: none;
+    @include media(sm, max) {
+      flex: 1 1 calc(100% / 2 - 1em);
     }
 
     @include media(xl) {
@@ -103,7 +103,6 @@
 
   &__reset-button {
     font-variation-settings: 'wght' 600;
-    inline-size: unset;
     grid-column: 1/-1;
     justify-self: start;
     @include media(xxl) {
@@ -114,8 +113,7 @@
   &__field {
     flex: auto;
 
-    @include media(xs) {
-      flex: 1 1 10em;
+    @include media(sm) {
       max-inline-size: 20em;
     }
   }
@@ -150,19 +148,21 @@
     background: #fff;
     overflow: hidden;
 
-    padding: 1.5em 0.5em 1.5em 1.5em;
+    padding: 0.75em;
     display: none;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.75em;
 
-    @include media(xs) {
+    @include media(sm) {
+      gap: 1em;
+      padding: 1.5em;
       position: absolute;
       inset: 100% 0 auto auto;
       margin-block-start: 1em;
       min-inline-size: min(75vw, 35em);
       max-block-size: 75vh;
-      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
-      border-radius: 20px;
+      box-shadow: var(--card-shadow, 0px 0px 50px #00000040);
+      border-radius: var(--card-radius, 20px);
     }
 
     @include media(md) {
@@ -176,22 +176,25 @@
 
   &__filter-title {
     flex: none;
-    font-size: 1.875em;
+    font-size: var(--display-font-sm, 1.875em);
     font-variation-settings: 'wght' 800;
   }
 
   &__filter-close-button {
     position: absolute;
     z-index: 1;
-    inset: 1.875em 1.25em auto auto;
+    inset: 0.75em 0.75em auto auto;
     @include box(1.5em);
     color: var(--text-low-color, #a7aab4);
+
+    @include media(sm) {
+      inset: 1.875em 1.25em auto auto;
+    }
   }
 
   &__filter-body {
     flex: auto;
     overflow-y: auto;
-    padding-inline-end: 1em;
 
     display: flex;
     flex-direction: column;
@@ -205,22 +208,29 @@
   }
 
   &__filter-field {
-    flex: auto;
+    flex: 1 1 min(20em, 40%);
   }
 
   &__filter-caption {
-    font-size: 1.25em;
+    font-size: 1em;
     font-variation-settings: 'wght' 700;
+
+    @include media(sm) {
+      font-size: 1.25em;
+    }
   }
 
   &__filter-desc {
-    font-size: 0.875em;
+    font-size: var(--text-font-sm, 0.875em);
   }
 
   &__filter-controls {
     flex: none;
     display: flex;
     gap: 0.625em;
-    padding-inline-end: 1em;
+
+    & > * {
+      flex: auto;
+    }
   }
 }
