@@ -91,25 +91,27 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-const mobileMenuButton = document.querySelector('.header__mobile-menu-button');
-const header = document.querySelector('.header');
+if (document.querySelector('.header__mobile-menu-button')) {
+  const mobileMenuButton = document.querySelector('.header__mobile-menu-button');
+  const header = document.querySelector('.header');
 
-const openMobileMenu = function () {
-  header.classList.add('header--opened');
-};
-const closeMobileMenu = function () {
-  header.classList.remove('header--opened');
-};
+  const openMobileMenu = function () {
+    header.classList.add('header--opened');
+  };
+  const closeMobileMenu = function () {
+    header.classList.remove('header--opened');
+  };
 
-mobileMenuButton.addEventListener('click', openMobileMenu);
-header.addEventListener('click', (evt) => {
-  if (
-    evt.target.classList.contains('header--opened') ||
-    evt.target.classList.contains('header__mobile-menu-button')
-  ) {
-    closeMobileMenu();
-  }
-});
+  mobileMenuButton.addEventListener('click', openMobileMenu);
+  header.addEventListener('click', (evt) => {
+    if (
+      evt.target.classList.contains('header--opened') ||
+      evt.target.classList.contains('header__mobile-menu-button')
+    ) {
+      closeMobileMenu();
+    }
+  });
+}
 
 if (document.querySelector('.search__button--content-objects')) {
   const objectsButton = document.querySelector(
@@ -152,3 +154,24 @@ if (document.querySelector('.search__button--content-objects')) {
 // setTimeout(() => {
 //   removePreloader(page, '.preloader');
 // }, 1200);
+
+if (document.querySelector('.search__filter-button')) {
+  const filterButton = document.querySelector('.search__filter-button');
+  const filterContainer = document.querySelector('.search__filter');
+  const openFilterContainer = function () {
+    filterContainer.classList.add('search__filter--opened');
+  };
+  const closeFilterContainer = function () {
+    filterContainer.classList.remove('search__filter--opened');
+  };
+
+  filterButton.addEventListener('click', openFilterContainer);
+  filterContainer.addEventListener('click', (evt) => {
+    if (
+      evt.target.classList.contains('search__filter') ||
+      evt.target.classList.contains('search__filter-close-button')
+    ) {
+      closeFilterContainer();
+    }
+  });
+}
