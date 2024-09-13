@@ -12,6 +12,7 @@
 
 * [Авторизация](https://savallera.github.io/database-of-objects/auth.html)
 * [Восстановление пароля](https://savallera.github.io/database-of-objects/resume.html)
+* [Поиск объектов](https://savallera.github.io/database-of-objects/main-search.html)
 
 Карта объекта
 
