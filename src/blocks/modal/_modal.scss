@@ -9,24 +9,21 @@
   display: flex;
   padding: 0.25em;
 
-  backdrop-filter: blur(18px);
-  background-color: rgba(0, 0, 0, 0.4);
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  user-select: none;
-  transition:
-    visibility 0s 0.35s,
-    opacity 0.35s;
+  backdrop-filter: blur(6px);
+  background-color: var(--bg-blur-color, #797979cc);
+  @extend %hidden-block;
 
   &__container {
     position: relative;
-    background-color: #fff;
-    border-radius: 25px;
+    background-color: var(--bg-color, #ffffff);
+    border-radius: var(--card-radius, 20px);
+    box-shadow: var(--card-shadow, 0px 0px 50px #00000040);
     padding: 1.5em;
+
     display: flex;
     flex-direction: column;
     gap: 1em;
+
     @include media(sm) {
       margin: auto;
     }
@@ -41,7 +38,7 @@
 
   &__title {
     flex: none;
-    font-size: 1.5em;
+    font-size: var(--heading-font-lg, 1.5em);
     font-variation-settings: 'wght' 800;
   }
 
@@ -49,6 +46,7 @@
     visibility: visible;
     opacity: 1;
     pointer-events: all;
+    user-select: auto;
     transition:
       visibility 0s,
       opacity 0.35s;

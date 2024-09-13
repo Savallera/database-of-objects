@@ -3,7 +3,10 @@
 
   &__item {
     line-height: 2;
-    margin-block-end: 2em;
+
+    &:not(:only-of-type, :last-child) {
+      margin-block-end: 2em;
+    }
   }
 
   // &__item-title {}

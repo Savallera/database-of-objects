@@ -44,6 +44,17 @@
     }
   }
 
+  &--theme-secondary {
+    background-color: var(--secondary-color, #4674ff);
+    color: var(--text-accent-color, #ffffff);
+    border-radius: var(--box-radius, 12px);
+    inline-size: 100%;
+
+    &:hover {
+      background-color: var(--secondary-color-hover, #2353e3);
+    }
+  }
+
   &--theme-light-secondary {
     background-color: var(--bg-secondary-color, #f3f4f6);
     color: var(--secondary-color, #4674ff);

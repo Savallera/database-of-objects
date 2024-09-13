@@ -1,0 +1,30 @@
+.main-search {
+  display: flex;
+  gap: 1.5em;
+
+  &__section {
+    &--content-map {
+      flex: 1 1 min(60em, 66%);
+    }
+
+    &--content-object {
+      flex: 0 1 min(40em, 33%);
+
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+
+  &__object-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.625em;
+  }
+
+  &__address {
+    padding-block: 0.75em;
+    border-block: 2px solid var(--border-color, #d9d9d9);
+  }
+}

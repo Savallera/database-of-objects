@@ -51,11 +51,322 @@
                   />
                 </div>
               </div>
-              <button
-                type="button"
-                class="search__icon-button icon-button icon icon--type-filter"
-                aria-label="Фильтр"
-              ></button>
+              <div class="search__filter">
+                <button
+                  type="button"
+                  class="search__filter-button icon-button icon icon--type-filter"
+                  aria-label="Фильтр"
+                ></button>
+                <div class="search__filter-container">
+                  <button
+                    type="reset"
+                    class="search__filter-close-button icon-button icon icon--type-close"
+                    aria-label="Закрыть"
+                  ></button>
+                  <h2 class="search__filter-title">Объекты</h2>
+                  <div class="search__filter-body">
+                    <h3 class="search__filter-caption">Округ/район</h3>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="district" class="field__label visually-hidden"
+                        >Округ</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select
+                          class="field__select"
+                          name="district"
+                          id="district"
+                        >
+                          <option value="" selected>Округ</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div
+                      class="field field--theme-grey search__filter-field field--state-disabled"
+                    >
+                      <label for="region" class="field__label visually-hidden"
+                        >Район</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="region" id="region">
+                          <option value="" selected>Район</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <h3 class="search__filter-caption">
+                      Принадлежность объекта
+                    </h3>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Ведомственная принадлежность</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>
+                            Ведомственная принадлежность
+                          </option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Баласнодержатель</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Баласнодержатель</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <h3 class="search__filter-caption">Спортивные зоны</h3>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Тип спортивной зоны</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Тип спортивной зоны</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Вид спорта</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Вид спорта</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <h3 class="search__filter-caption">Свойства</h3>
+                    <p class="search__filter-desc">Площадь</p>
+                    <div class="search__filter-field-group">
+                      <div class="field field--theme-grey search__filter-field">
+                        <label
+                          for="square-from"
+                          class="field__label visually-hidden"
+                          >От</label
+                        >
+                        <div class="field__inner">
+                          <input
+                            type="text"
+                            class="field__input"
+                            name="square-from"
+                            id="square-from"
+                            placeholder="От"
+                          />
+                        </div>
+                      </div>
+                      <div class="field field--theme-grey search__filter-field">
+                        <label
+                          for="square-to"
+                          class="field__label visually-hidden"
+                          >До</label
+                        >
+                        <div class="field__inner">
+                          <input
+                            type="text"
+                            class="field__input"
+                            name="square-to"
+                            id="square-to"
+                            placeholder="До"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Назначение</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Назначение</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Тип объекта</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Тип объекта</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Характеристики</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Характеристики</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <h3 class="search__filter-caption">Рейтинг</h3>
+                    <div class="search__filter-field-group">
+                      <div class="field field--theme-grey search__filter-field">
+                        <label
+                          for="square-from"
+                          class="field__label visually-hidden"
+                          >От</label
+                        >
+                        <div class="field__inner">
+                          <input
+                            type="text"
+                            class="field__input"
+                            name="square-from"
+                            id="square-from"
+                            placeholder="От"
+                          />
+                        </div>
+                      </div>
+                      <div class="field field--theme-grey search__filter-field">
+                        <label
+                          for="square-to"
+                          class="field__label visually-hidden"
+                          >До</label
+                        >
+                        <div class="field__inner">
+                          <input
+                            type="text"
+                            class="field__input"
+                            name="square-to"
+                            id="square-to"
+                            placeholder="До"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="search__filter-caption">Рейтинг</h3>
+                    <div class="field field--theme-grey search__filter-field">
+                      <label for="" class="field__label visually-hidden"
+                        >Статус</label
+                      >
+                      <div class="field__inner">
+                        <span
+                          class="field__select-arrow icon icon--type-arrow-down"
+                        ></span>
+                        <select class="field__select" name="" id="">
+                          <option value="" selected>Статус</option>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                        </select>
+                      </div>
+                    </div>
+                    <p class="search__filter-desc">Год ремонта</p>
+                    <div
+                      class="field field--theme-grey search__filter-field"
+                      aria-label="Поиск"
+                    >
+                      <div class="field__inner">
+                        <span
+                          class="field__label-icon icon icon--type-calendar"
+                        ></span>
+                        <input
+                          type="number"
+                          min="1900"
+                          max="2099"
+                          value="2000"
+                          minlength="4"
+                          maxlength="4"
+                          step="1"
+                          class="field__input"
+                          name="year"
+                          id="year"
+                        />
+                      </div>
+                    </div>
+                    <p class="search__filter-desc">Дата ввода в эксплуатацию</p>
+                    <div
+                      class="field field--theme-grey search__filter-field"
+                      aria-label="Поиск"
+                    >
+                      <div class="field__inner">
+                        <span
+                          class="field__label-icon icon icon--type-calendar"
+                        ></span>
+                        <input
+                          type="text"
+                          class="field__input"
+                          name="date"
+                          id="date"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search__filter-controls">
+                    <button
+                      type="button"
+                      class="button button--theme-secondary"
+                    >
+                      <span class="button__text">Применить</span>
+                    </button>
+                    <button
+                      type="reset"
+                      class="button button--theme-light-grey"
+                    >
+                      <span class="button__text">Сбросить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <button
               type="reset"

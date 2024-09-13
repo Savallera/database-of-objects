@@ -1,16 +1,18 @@
 .page {
   min-block-size: 100vh;
   min-block-size: 100dvb;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 0.25em;
   gap: 0.25em;
   background-color: var(--bg-secondary-color, #dedfe3);
 
-  // &__header {}
+  &__header {
+    flex: none;
+  }
 
   &__content {
-    min-inline-size: 0;
+    flex: auto;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -34,12 +36,16 @@
       text-transform: uppercase;
       margin-block-end: min(10%, 4rem);
     }
+
+    &--fs-sm {
+      font-size: 1.875em;
+    }
   }
 
   // Смотреть панораму
   &__fixed-button {
     position: fixed;
-    inset: auto .5em .5em auto;
+    inset: auto 0.5em 0.5em auto;
     background-color: #fff;
     border-radius: 10px;
     color: var(--main-color, #e22b36);
@@ -52,8 +58,7 @@
   }
 
   @include media(lg) {
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
+    flex-direction: row;
     padding: 1em;
     gap: 1em;
 

@@ -13,6 +13,27 @@
     position: absolute;
     inset: 0 auto auto 0.75em;
     pointer-events: none;
+
+    @include box(1.5em);
+    inset-block-start: 0.875em;
+
+    & + .field__input {
+      padding-inline-start: 2.5em;
+    }
+  }
+
+  &__select-arrow {
+    display: inline-block;
+    position: absolute;
+    inset: 0 0.75em auto auto;
+    pointer-events: none;
+
+    @include box(1.5em);
+    inset-block-start: 0.875em;
+
+    & + .field__input {
+      padding-inline-end: 2.5em;
+    }
   }
 
   &__inner {
@@ -25,10 +46,12 @@
     grid-area: 1/1/2/2;
     padding: 1em 0.625rem;
     font-size: inherit;
+    color: inherit;
     font-variation-settings: 'wght' 400;
     background-color: #fff;
     border: 1px solid var(--border-color, #c2c5cb);
     border-radius: var(--box-radius, 12px);
+    outline-offset: -2px;
 
     @include placeholder {
       color: var(--text-low-color, #595d69);
@@ -41,6 +64,10 @@
     &:focus-visible {
       outline: 2px solid var(--main-color, #e22b36);
     }
+  }
+
+  &__select {
+    @extend .field__input;
   }
 
   &__error-text {
@@ -67,12 +94,22 @@
       font-size: 0.875em;
       padding: 0.75em 0.5em;
     }
+
     .field__label-icon {
       @include box(1em);
       inset-block-start: 0.75em;
 
       & + .field__input {
         padding-inline-start: 2.5em;
+      }
+    }
+
+    .field__select-arrow {
+      @include box(1em);
+      inset-block-start: 0.75em;
+
+      & + .field__input {
+        padding-inline-end: 2.5em;
       }
     }
   }
@@ -112,6 +149,15 @@
         visibility 0s,
         opacity 0.35s;
       grid-area: unset;
+    }
+  }
+
+  &--state-disabled {
+    color: var(--text-accent-color, #ffffff);
+    .field__input {
+      pointer-events: none;
+      user-select: none;
+      background-color: var(--bg-tetriary-color, #d9d9d9);
     }
   }
 }
