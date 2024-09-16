@@ -37,7 +37,7 @@
       <li class="header__menu-item">
         <a
           class="button button--theme-main button--size-sm header__menu-button"
-          href="./main-search.html"
+          href="./"
           ><span class="button__text">Вернуться на главную</span></a
         >
       </li>
@@ -178,7 +178,7 @@
           <div class="monitoring__inner">
             <div class="monitoring__header">
               <div
-                class="monitoring__header-item monitoring__header-item--content-main-rating"
+                class="monitoring__item monitoring__item--theme-main monitoring__item--content-rate"
               >
                 <h2 class="monitoring__label">Общий рейтинг:</h2>
                 <p class="monitoring__rate">100%</p>
@@ -202,23 +202,40 @@
                   </div>
                 </div>
               </div>
-              <div class="monitoring__header-item">
+              <div class="monitoring__item">
                 <h3 class="monitoring__label">
                   Рейтинг санитарного состояния:
                 </h3>
                 <p class="monitoring__rate">100%</p>
               </div>
-              <div class="monitoring__header-item">
+              <div class="monitoring__item">
                 <h3 class="monitoring__label">
                   Рейтинг санитарного состояния:
                 </h3>
                 <p class="monitoring__rate">100%</p>
               </div>
-              <div class="monitoring__header-item">
+              <div class="monitoring__item">
                 <h3 class="monitoring__label">
                   Рейтинг санитарного состояния:
                 </h3>
                 <p class="monitoring__rate">100%</p>
+              </div>
+            </div>
+            <div class="monitoring__main-chart-container">
+              <div class="monitoring__chart"></div>
+              <div class="monitoring__chart-info">
+                <div class="monitoring__item">
+                  <h3 class="monitoring__label">Активных замечаний</h3>
+                  <p class="monitoring__rate monitoring__rate--size-sm">320 (8%)</p>
+                </div>
+                <div class="monitoring__item">
+                  <h3 class="monitoring__label">Устраненных замечаний</h3>
+                  <p class="monitoring__rate monitoring__rate--size-sm">4 212 (92%)</p>
+                </div>
+                <div class="monitoring__item monitoring__item--theme-main">
+                  <h3 class="monitoring__label">Всего замечаний</h3>
+                  <p class="monitoring__rate monitoring__rate--size-sm">4 532</p>
+                </div>
               </div>
             </div>
             <div class="monitoring__columns">
@@ -233,19 +250,28 @@
                   <div class="chart__item">
                     <p class="chart__label">Санитарные</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 100%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 100%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Органи&shy;зационные</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 75%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 75%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Технические</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 50%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 50%"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -261,36 +287,53 @@
                   <div class="chart__item">
                     <p class="chart__label">Внутренние помещения</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 100%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 100%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Территория</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 75%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 75%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Фасад</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 50%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 50%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Кровля</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 25%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 25%"
+                      ></div>
                     </div>
                   </div>
                   <div class="chart__item">
                     <p class="chart__label">Кровля</p>
                     <div class="chart__indicator">
-                      <div class="chart__indicator-item" style="inline-size: 25%"></div>
+                      <div
+                        class="chart__indicator-item"
+                        style="inline-size: 25%"
+                      ></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="monitoring__column monitoring__column--content-vertical-chart">
+              <div
+                class="monitoring__column monitoring__column--content-vertical-chart"
+              >
                 <h3 class="monitoring__caption">
                   Активные замечания по приоритету
                 </h3>
@@ -366,7 +409,9 @@
                     </div>
                   </div>
                   <p class="vertical-chart__description">
-                    <span class="vertical-chart__description-block vertical-chart__indicator-main-color"></span>
+                    <span
+                      class="vertical-chart__description-block vertical-chart__indicator-main-color"
+                    ></span>
                     <span class="vertical-chart__description-text"
                       >Среднее время устранения, дн.</span
                     >
