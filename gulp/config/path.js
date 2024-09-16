@@ -59,13 +59,13 @@ export default {
   svg: {
     src: [
       pathSrc + '/images/*.svg',
-      pathSrc + '/images/**/*.svg',
+      // pathSrc + '/images/**/*.svg',
       '!' + pathSrc + '/images/icons/*.svg',
       '!' + pathSrc + '/images/sport-icons/*.svg',
     ],
     watch: [
       pathSrc + '/images/*.svg',
-      pathSrc + '/images/**/*.svg',
+      // pathSrc + '/images/**/*.svg',
       '!' + pathSrc + '/images/icons/*.svg',
       '!' + pathSrc + '/images/sport-icons/*.svg',
     ],
