@@ -156,23 +156,23 @@ if (document.querySelector('.search__button--content-objects')) {
 }
 
 /* Прелодер на страницы */
-// const preloaderTmp = document.querySelector('.preloader-template');
-// const page = document.querySelector('.page');
-// function showPreloader(tmp, parent) {
-//   const node = tmp.content.cloneNode(true);
-//   parent.append(node);
-// }
-// function removePreloader(parent, preloaderSelector) {
-//   const preloader = parent.querySelector(preloaderSelector);
-//   if (preloader) {
-//     preloader.remove();
-//   }
-// }
+const preloaderTmp = document.querySelector('.preloader-template');
+const page = document.querySelector('.page');
+function showPreloader(tmp, parent) {
+  const node = tmp.content.cloneNode(true);
+  parent.append(node);
+}
+function removePreloader(parent, preloaderSelector) {
+  const preloader = parent.querySelector(preloaderSelector);
+  if (preloader) {
+    preloader.remove();
+  }
+}
 
-// showPreloader(preloaderTmp, page);
-// setTimeout(() => {
-//   removePreloader(page, '.preloader');
-// }, 1200);
+showPreloader(preloaderTmp, page);
+setTimeout(() => {
+  removePreloader(page, '.preloader');
+}, 1200);
 
 if (document.querySelector('.search__filter-button')) {
   const filterButton = document.querySelector('.search__filter-button');
