@@ -188,6 +188,7 @@
                             type="button"
                             class="gallery-slider__item-icon icon-button icon icon--type-search-in-box"
                             aria-label="Развернуть"
+                            onclick="openImagePreview()"
                           ></button>
                         </div>
                         <img
@@ -205,6 +206,7 @@
                             type="button"
                             class="gallery-slider__item-icon icon-button icon icon--type-search-in-box"
                             aria-label="Развернуть"
+                            onclick="openImagePreview()"
                           ></button>
                         </div>
                         <img
@@ -394,6 +396,62 @@
     </div>
     <script src="./scripts/libs/splide.min.js"></script>
 <script src="./scripts/index.js" defer></script>
+
+    <div class="image-preview">
+  <div class="image-preview__panel">
+    <p class="image-preview__info-text">1/13</p>
+    <p class="image-preview__title">Заголовок</p>
+    <button
+      type="button"
+      class="icon-button image-preview__close icon icon--type-close"
+      aria-label="Закрыть"
+    ></button>
+  </div>
+  <div class="image-preview__container">
+    <div
+      class="splide image-preview__slider"
+      id="image-preview-slider"
+      aria-label="Галерея"
+    >
+      <div class="splide__track image-preview__track">
+        <ul class="splide__list image-preview__list">
+          <li class="splide__slide image-preview__slide">
+            <img
+              class="image-preview__image"
+              src="https://avatars.mds.yandex.net/i?id=a90e38f3d8f3942830ab7c4a7ff5c600_l-5220548-images-thumbs&n=13"
+              alt="Описание изображения"
+              loading="lazy"
+            />
+          </li>
+          <li class="splide__slide image-preview__slide">
+            <img
+              class="image-preview__image"
+              src="https://avatars.dzeninfra.ru/get-zen_doc/1775615/pub_61fb9d102e997245f9e79123_61fcd5100c85c6158567716a/scale_1200"
+              alt="Описание изображения"
+              loading="lazy"
+            />
+          </li>
+          <li class="splide__slide image-preview__slide">
+            <img
+              class="image-preview__image"
+              src="https://avatars.dzeninfra.ru/get-zen_doc/1645803/pub_5f0d34fd1779c969201d9510_5f0d3521979fad525bb33278/scale_1200"
+              alt="Описание изображения"
+              loading="lazy"
+            />
+          </li>
+          <li class="splide__slide image-preview__slide">
+            <img
+              class="image-preview__image"
+              src="https://avatars.mds.yandex.net/i?id=460f959c43fe56da00b750d3d5d95a1f_l-7015254-images-thumbs&n=13"
+              alt="Описание изображения"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
