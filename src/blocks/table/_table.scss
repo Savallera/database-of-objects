@@ -1,14 +1,9 @@
-.table-wrap {
-  width: 100%;
-  overflow: auto;
-}
-
 .table {
   table-layout: fixed;
   border-collapse: separate;
   max-inline-size: 100%;
   min-inline-size: 100%;
-  border-spacing: 0 0.25em;
+  border-spacing: 0;
   border: none;
 
   th,
@@ -30,7 +25,7 @@
 
   th {
     position: sticky;
-    top: 0.25em;
+    top: 0em;
     z-index: 1;
 
     color: var(--text-accent-color, #ffffff);
@@ -38,11 +33,11 @@
   }
   td {
     background-color: var(--bg-secondary-color, #f3f4f6);
+    border-block-end: .25em solid var(--bg-main-color, #ffffff);
   }
 
   &__cell {
     display: flex;
-    // min-inline-size: 9rem;
     align-items: center;
     font-size: 0.625em;
 
@@ -84,5 +79,25 @@
     &:hover {
       color: var(--text-color, #272b37);
     }
+  }
+
+  &__sort-button {
+    @include box(1.25rem);
+
+    &--sort-descending {
+      .table__sort-icon path:first-child {
+        fill: #272b37bf;
+      }
+    }
+
+    &--sort-ascending {
+      .table__sort-icon path:last-child {
+        fill: #272b37bf;
+      }
+    }
+  }
+
+  &__sort-icon {
+    @include box(inherit);
   }
 }

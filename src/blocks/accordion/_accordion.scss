@@ -19,6 +19,12 @@
     &:active {
       transform: scale(0.95);
     }
+
+    &--actived {
+      .accordion__button-icon {
+        transform: scaleY(-1);
+      }
+    }
   }
 
   &__button-text {
@@ -47,9 +53,9 @@
     & > .accordion__section {
       display: block;
     }
-    & > .accordion__button .accordion__button-icon {
-      transform: scaleY(-1);
-    }
+    // & > .accordion__button .accordion__button-icon {
+    //   transform: scaleY(-1);
+    // }
   }
 
   &--theme-lower {

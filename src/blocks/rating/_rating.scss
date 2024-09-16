@@ -1,5 +1,6 @@
 .rating {
-  inline-size: 18em;
+  flex: auto;
+  max-inline-size: 18em;
 
   &__group {
     display: flex;
@@ -32,11 +33,7 @@
     line-height: 1.5;
   }
 
-  &--place-monitoring {
-    inline-size: unset;
-    flex: auto;
-    .rating__star--actived {
-      color: var(--icon-accent-color, #ffffff);
-    }
+  &--place-monitoring .rating__star--actived {
+    color: var(--icon-accent-color, #ffffff);
   }
 }

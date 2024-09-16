@@ -1,18 +1,28 @@
 .main-search {
+  inline-size: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5em;
 
   &__section {
+    flex: auto;
+
     &--content-map {
-      flex: 1 1 min(60em, 66%);
+      flex-basis: 60%;
+      min-inline-size: min(40em, 100%);
     }
 
     &--content-object {
-      flex: 0 1 min(40em, 33%);
+      flex-basis: 30%;
+      min-inline-size: min(25em, 100%);
 
       display: flex;
       flex-direction: column;
       gap: 1em;
+    }
+
+    &--hidden {
+      display: none;
     }
   }
 
@@ -26,5 +36,55 @@
   &__address {
     padding-block: 0.75em;
     border-block: 2px solid var(--border-color, #d9d9d9);
+  }
+
+  &__map {
+    max-block-size: 45em;
+  }
+
+  &__map-info {
+    @extend %reset-list;
+    max-inline-size: 45em;
+    padding-block: min(5%, 2.5em) 0;
+    line-height: 1.7;
+    font-variation-settings: 'wght' 700;
+
+    @include media(sm) {
+      columns: 17em 2;
+      column-gap: 1em;
+    }
+  }
+
+  &__accordion-button {
+    display: flex;
+    gap: 0.625em;
+    align-items: flex-start;
+
+    .accordion__button {
+      padding: 0;
+      flex: auto;
+    }
+  }
+
+  &__accordion-link {
+    text-underline-position: under;
+    color: var(--main-color, #e22b36);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @include media(xl) {
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto 1fr;
   }
 }

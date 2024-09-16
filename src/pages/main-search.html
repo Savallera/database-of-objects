@@ -2,11 +2,11 @@
 <html lang="ru">
   @@include("../blocks/head/head.html", {"title": "Карточка объекта - Поиск объектов"})
   <body>
-    <div class="page">
-      <main class="page__content content">
+    <div class="page page--content-main-search">
+      <main class="page__content">
         <header class="search">
-          <form class="search__form" name="search">
-            <fieldset class="search__fieldset search__fieldset--single-row">
+          <form class="search__form search__form--single-row" name="search">
+            <fieldset class="search__fieldset">
               <button
                 type="button"
                 class="button button--theme-light-secondary button--size-xs search__button"
@@ -34,7 +34,9 @@
                   class="search__filter-button icon-button icon icon--type-filter"
                   aria-label="Фильтр"
                 ></button>
-                <div class="search__filter-container">
+                <div
+                  class="search__filter-container search__filter-container--place-main-search"
+                >
                   <button
                     type="reset"
                     class="search__filter-close-button icon-button icon icon--type-close"
@@ -353,10 +355,17 @@
             </button>
           </form>
         </header>
-        <section class="content__body main-search">
-          <div
-            class="map main-search__section main-search__section--content-map"
-          ></div>
+        <section class="main-search">
+          <div class="main-search__section main-search__section--content-map">
+            <div class="map main-search__map"></div>
+            <ul class="main-search__map-info">
+              <li>Объектов - 376</li>
+              <li>Площадь, м2 - 136 000</li>
+              <li>Спортивных зон - 376</li>
+              <li>Площадь, м2 - 80 000</li>
+              <li>ЕПС - 3600</li>
+            </ul>
+          </div>
           <div
             class="main-search__section main-search__section--content-object"
           >
@@ -447,6 +456,26 @@
                 </p>
               </div>
             </address>
+            <div class="accordion">
+              <div class="main-search__accordion-button">
+                <button
+                  type="button"
+                  class="accordion__button"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="accordion__button-text"
+                    >В этот объект входят 3 спортивные зоны</span
+                  >
+                  <span
+                    class="accordion__button-icon icon icon--type-drop-down"
+                  ></span>
+                </button>
+                <a class="main-search__accordion-link" rel="ugs noopener" href="#">Подробнее</a>
+              </div>
+              <div class="accordion__section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis, non libero ipsa laudantium inventore corporis officia culpa laboriosam vitae nisi, quia fuga veritatis eos impedit quibusdam soluta iste laborum?
+              </div>
+            </div>
           </div>
         </section>
       </main>

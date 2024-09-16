@@ -60,6 +60,8 @@
     }
   }
 
+  // &--content-main-search {}
+
   @include media(sm) {
     padding: 1em;
     gap: 1em;
@@ -70,5 +72,14 @@
     block-size: 100vh;
     block-size: 100dvb;
     overflow-y: hidden;
+
+    &--content-main-search {
+      block-size: unset;
+      overflow: unset;
+
+      .page__content {
+        overflow: unset;
+      }
+    }
   }
 }
