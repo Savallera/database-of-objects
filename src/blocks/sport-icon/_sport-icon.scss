@@ -12,13 +12,9 @@
     block-size: 100%;
   }
 
-  &--id-46::before {
-    mask-image: url('../images/sport-icons.svg#46');
-  }
-  &--id-47::before {
-    mask-image: url('../images/sport-icons.svg#47');
-  }
-  &--id-48::before {
-    mask-image: url('../images/sport-icons.svg#48');
+  @for $i from 1 through 600 {
+    &--id-#{$i}::before {
+      mask-image: url('../images/sport-icons.svg##{$i}');
+    }
   }
 }
