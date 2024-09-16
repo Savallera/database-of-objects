@@ -62,5 +62,25 @@ window.addEventListener('DOMContentLoaded', () => {
       });
       gallerySlider.mount();
     }
+    if (document.querySelector('#image-preview-slider')) {
+      let imagePreviewSlider = new Splide('#image-preview-slider', {
+        classes: {
+          arrows: 'splide__arrows image-preview__arrows',
+          arrow: 'splide__arrow image-preview__arrow',
+          prev: 'splide__arrow--prev image-preview__arrow--prev',
+          next: 'splide__arrow--next image-preview__arrow--next',
+        },
+        type: 'slide',
+        pagination: false,
+        arrows: true,
+        gap: '1em',
+        breakpoints: {
+          768: {
+            arrows: false,
+          },
+        },
+      });
+      imagePreviewSlider.mount();
+    }
   }
 });
