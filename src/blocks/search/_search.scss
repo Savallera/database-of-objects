@@ -70,6 +70,7 @@
     border: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     // align-items: center;
     gap: 0.75em;
 
@@ -93,6 +94,7 @@
   &__heading {
     flex-grow: 0;
     min-inline-size: 100%;
+    line-height: 1;
     @include media(md) {
       min-inline-size: unset;
     }

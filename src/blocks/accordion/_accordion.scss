@@ -58,6 +58,12 @@
     // }
   }
 
+  &--theme-secondary {
+    .accordion__button-text {
+      font-variation-settings: 'wght' 400;
+    }
+  }
+
   &--theme-lower {
     .accordion__button {
       padding-block: 0.25em;

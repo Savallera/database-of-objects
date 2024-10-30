@@ -34,88 +34,178 @@
         </header>
         <section class="content__body" aria-label="Ремонт">
           <ul class="data-list">
-            <li class="data-list__item">
-              <span class="data-list__label">Техническое состояние:</span>
-              <span class="data-list__text">Не требуется ремонт</span>
+            <li>
+              <span class="data-list__label">Статус ремонтных работ:</span>
+              <span class="data-list__text">Завершены</span>
             </li>
-            <li class="data-list__item">
-              <span class="data-list__label">
-                Примечание к техническому состоянию:</span
-              >
-              <ul class="data-list__text data-list__text--content-list">
-                <li>
-                  <span class="data-list__label">Статус ремонтных работ:</span>
-                  <span class="data-list__text">Завершены</span>
-                </li>
-                <li>
-                  <span class="data-list__label">Дата начала работ:</span>
-                  <span class="data-list__text">01.08.2022</span>
-                </li>
-                <li>
-                  <span class="data-list__label">Дата окончания работ:</span>
-                  <span class="data-list__text">15.03.2023</span>
-                </li>
-                <li>
-                  <span class="data-list__label"
-                    >Исполнитель ремонтных работ:</span
-                  >
-                  <span class="data-list__text">АНО "Мосспортразвитие"</span>
-                </li>
-                <li>
-                  <span class="data-list__label">Тип ремонта:</span>
-                  <span class="data-list__text"
-                    >Комплексный капитальный ремонт</span
-                  >
-                </li>
-              </ul>
+            <li>
+              <span class="data-list__label">Дата начала работ:</span>
+              <span class="data-list__text">01.08.2022</span>
             </li>
-            <li class="data-list__item">
-              <span class="data-list__label">Объем работ:</span>
+            <li>
+              <span class="data-list__label">Дата окончания работ:</span>
+              <span class="data-list__text">15.03.2023</span>
+            </li>
+            <li>
+              <span class="data-list__label">Исполнитель ремонтных работ:</span>
+              <span class="data-list__text">АНО "Мосспортразвитие"</span>
+            </li>
+            <li>
+              <span class="data-list__label">Тип ремонта:</span>
               <span class="data-list__text"
-                >Фасады
-                <span class="data-list__sub-text">Оштукатуривание</span></span
+                >Комплексный капитальный ремонт</span
+              >
+            </li>
+            <li class="data-list__item data-list__item--content-data">
+              <span class="data-list__label">Объем работ:</span>
+              <div class="data-list__item-container">
+                <div class="accordion data-list__accordion">
+                  <div class="data-list__accordion-caption">
+                    <button
+                      type="button"
+                      class="accordion__button data-list__accordion-button"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <span
+                        class="accordion__button-text data-list__accordion-text"
+                        >Фасады</span
+                      >
+                      <span
+                        class="accordion__button-icon icon icon--type-drop-down"
+                      ></span>
+                    </button>
+                    <span
+                      class="data-list__icon data-list__icon--size-small icon icon--type-info"
+                    ></span>
+                  </div>
+                  <div class="accordion__section">
+                    <p class="data-list__text">Оштукатуривание</p>
+                  </div>
+                </div>
+                <div class="accordion data-list__accordion">
+                  <div class="data-list__accordion-caption">
+                    <button
+                      type="button"
+                      class="accordion__button data-list__accordion-button"
+                      onclick="toggleAccordion(this)"
+                    >
+                      <span
+                        class="accordion__button-text data-list__accordion-text"
+                        >Инженерные системы</span
+                      >
+                      <span
+                        class="accordion__button-icon icon icon--type-drop-down"
+                      ></span>
+                    </button>
+                    <span
+                      class="data-list__icon data-list__icon--size-small icon icon--type-info"
+                    ></span>
+                  </div>
+                  <div class="accordion__section">
+                    <p class="data-list__text">Инженерные системы</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Примечание:</span>
+              <span class="data-list__text">Отремонтирован 2 этаж здания</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Стоимость работ, млн. руб.:</span>
+              <span class="data-list__text">24,3</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label"
+                >Концепция развития объекта/территории:</span
+              >
+              <a
+                href="#"
+                rel="ugs noopener"
+                class="data-list__link data-list__link--type-document"
+                >Разработана</a
               >
             </li>
             <li class="data-list__item">
-              <span class="data-list__label"> Примечание к объему работ:</span>
-              <ul class="data-list__text data-list__text--content-list">
-                <li>
-                  <span class="data-list__label">Объем работ:</span>
-                  <span class="data-list__text"
-                    >Инженерные системы
-                    <span class="data-list__sub-text"
-                      >Электроснабжение; Водоснабжение; Канализация</span
-                    ></span
-                  >
-                </li>
-              </ul>
+              <span class="data-list__label"
+                >Проект развития объекта/территории:</span
+              >
+              <a
+                href="#"
+                rel="ugs noopener"
+                class="data-list__link data-list__link--type-document"
+                >Разработан</a
+              >
+            </li>
+          </ul>
+          <hr class="content__divider" />
+          <ul class="data-list">
+            <li>
+              <span class="data-list__label">Статус ремонтных работ:</span>
+              <span class="data-list__text">Завершены</span>
+            </li>
+            <li>
+              <span class="data-list__label">Дата начала работ:</span>
+              <span class="data-list__text">01.12.2022</span>
+            </li>
+            <li>
+              <span class="data-list__label">Дата окончания работ:</span>
+              <span class="data-list__text">01.08.2023</span>
+            </li>
+            <li>
+              <span class="data-list__label">Исполнитель ремонтных работ:</span>
+              <span class="data-list__text">АНО "Мосспортразвитие"</span>
+            </li>
+            <li>
+              <span class="data-list__label">Тип ремонта:</span>
+              <span class="data-list__text">Локальный капитальный ремонт</span>
+            </li>
+            <li class="data-list__item data-list__item--content-data">
+              <span class="data-list__label">Объем работ:</span>
+              <div class="data-list__item-container">
+                <p class="data-list__text">
+                  Окна
+                  <span
+                    class="data-list__icon data-list__icon--size-small icon icon--type-info"
+                  ></span>
+                </p>
+                <p class="data-list__text">
+                  Внутренние помещения
+                  <span
+                    class="data-list__icon data-list__icon--size-small icon icon--type-info"
+                  ></span>
+                </p>
+              </div>
             </li>
             <li class="data-list__item">
-              <span class="data-list__label"> Примечание к объему работ:</span>
-              <ul class="data-list__text data-list__text--content-list">
-                <li>
-                  <span class="data-list__label"
-                    >Концепция развития объекта/территории:</span
-                  >
-                  <a
-                    href="#"
-                    rel="ugs noopener"
-                    class="data-list__link data-list__link--type-document"
-                    >Разработана</a
-                  >
-                </li>
-                <li>
-                  <span class="data-list__label"
-                    >Проект развития объекта/территории:</span
-                  >
-                  <a
-                    href="#"
-                    rel="ugs noopener"
-                    class="data-list__link data-list__link--type-document"
-                    >Разработан</a
-                  >
-                </li>
-              </ul>
+              <span class="data-list__label">Примечание:</span>
+              <span class="data-list__text">Косметический ремонт 1 этажа</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label">Стоимость работ, млн. руб.:</span>
+              <span class="data-list__text">11</span>
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label"
+                >Концепция развития объекта/территории:</span
+              >
+              <a
+                href="#"
+                rel="ugs noopener"
+                class="data-list__link data-list__link--type-document"
+                >Разработана</a
+              >
+            </li>
+            <li class="data-list__item">
+              <span class="data-list__label"
+                >Проект развития объекта/территории:</span
+              >
+              <a
+                href="#"
+                rel="ugs noopener"
+                class="data-list__link data-list__link--type-document"
+                >Разработан</a
+              >
             </li>
           </ul>
         </section>

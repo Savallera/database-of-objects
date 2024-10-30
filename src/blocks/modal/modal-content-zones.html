@@ -1,70 +1,17 @@
-<div class="modal modal--content-objects">
+<div class="modal modal--content-zones">
   <div class="modal__container">
     <button
       type="reset"
       class="modal__close-button icon-button icon icon--type-close"
       aria-label="Закрыть"
     ></button>
-    <p class="modal__title">Объекты</p>
-    <form class="filters" name="objects" action="">
+    <p class="modal__title">Спортивные зоны</p>
+    <form class="filters" name="zones" action="">
       <div class="filters__content">
         <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-01"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Организация</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-01"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Вид собственности</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Организация Балансодержатель</span
-                  >
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
+          <div
+            class="accordion__button accordion__button--actived filters__accordion-button"
+          >
             <label class="filters__label">
               <input
                 type="checkbox"
@@ -96,7 +43,7 @@
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
                   <span class="filters__label-text"
-                    >ID объекта в ИАС Спорт</span
+                    >Идентификатор спортивного объекта</span
                   >
                 </label>
               </li>
@@ -111,34 +58,8 @@
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
                   <span class="filters__label-text"
-                    >Назначение объекта</span
+                    >Краткое название спортивного объекта</span
                   >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Название объекта</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Краткое название объекта</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -164,20 +85,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Статус объекта</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Вид пользования</span>
+                  <span class="filters__label-text">Назначение объекта</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -242,7 +150,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Расписание работы объекта</span>
+                  <span class="filters__label-text">Вид собственности</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -255,7 +163,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Единовременная пропускная способность (ЕПС) объекта</span>
+                  <span class="filters__label-text">Организация Балансодержатель</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -268,7 +176,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Общая площадь крытых помещений</span>
+                  <span class="filters__label-text">Статус объекта</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -281,7 +189,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Этажность</span>
+                  <span class="filters__label-text">Дата ввода в эксплуатацию</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -294,270 +202,16 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Кадастровый номер объекта</span>
+                  <span class="filters__label-text">Характеристики</span>
                 </label>
               </li>
             </ul>
           </div>
         </div>
         <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-02"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Характеристики объекта</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-01"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Крытый/открытый</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Капитальный/некапитальный </span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Специальный/приспособленный</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Тип здания</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Принадлежность</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Тип архитектуры</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-02"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Строительство</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-01"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Дата ввода в эксплуатацию</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Источник финансирования строительства</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Программа  строительства</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-02"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Спортивные зоны</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-01"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Спортивные зоны (крытые)</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Спортивные зоны (открытые)</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Виды спорта</span>
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-0"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text">Общая площадь спортивных зон, м2</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
+          <div
+            class="accordion__button accordion__button--actived filters__accordion-button"
+          >
             <label class="filters__label">
               <input
                 type="checkbox"
@@ -567,7 +221,7 @@
               <span
                 class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
               ></span>
-              <span class="accordion__button-text">Свойства объекта</span>
+              <span class="accordion__button-text">Спортивная зона</span>
             </label>
             <button
               type="button"
@@ -582,30 +236,13 @@
                 <label class="filters__label">
                   <input
                     type="checkbox"
-                    name="checkbox-01"
+                    name="checkbox-0"
                     class="filters__checkbox"
                   />
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text"
-                    >Наличие СКУД</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Наличие раздевалки</span
-                  >
+                  <span class="filters__label-text">Реестровый номер спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -618,7 +255,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие душевой</span>
+                  <span class="filters__label-text">Тип спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -631,7 +268,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие душевой</span>
+                  <span class="filters__label-text">Назначение спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -644,7 +281,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие точки питания</span>
+                  <span class="filters__label-text">Статус функционирования спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -657,7 +294,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие точки питания</span>
+                  <span class="filters__label-text">Свойства спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -670,7 +307,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие автомобильной парковки</span>
+                  <span class="filters__label-text">Площадь спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -683,7 +320,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие остановок городского общественного транспорта</span>
+                  <span class="filters__label-text">Длина спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -696,7 +333,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие туалета</span>
+                  <span class="filters__label-text">Ширина спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -709,7 +346,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие точки Wi-Fi</span>
+                  <span class="filters__label-text">Глубина спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -722,7 +359,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие банкомата</span>
+                  <span class="filters__label-text">Высота спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -735,7 +372,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие медпункта</span>
+                  <span class="filters__label-text">Группа спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -748,7 +385,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие звукового сопровождения</span>
+                  <span class="filters__label-text">Единовременная пропускная способность (ЕПС)</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -761,7 +398,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Наличие велосипедной парковки</span>
+                  <span class="filters__label-text">Вместимость трибун у спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -774,7 +411,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Приспособлен для посещений инвалидами</span>
+                  <span class="filters__label-text">Наличие освещения у спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -787,7 +424,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Включение в Федеральный реестр</span>
+                  <span class="filters__label-text">Эксплуатируется (сезон)</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -800,7 +437,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Дата включения в Федеральный реестр</span>
+                  <span class="filters__label-text">Тип покрытия спортивной зоны</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -813,62 +450,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Общее количество зрительских мест</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-02"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Земельный участок</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-01"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >ID земельного участка</span
-                  >
-                </label>
-              </li>
-              <li class="filters__item">
-                <label class="filters__label">
-                  <input
-                    type="checkbox"
-                    name="checkbox-02"
-                    class="filters__checkbox"
-                  />
-                  <span
-                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-                  ></span>
-                  <span class="filters__label-text"
-                    >Кадастровый номер земельного участка</span
-                  >
+                  <span class="filters__label-text">Форма посещения (платность)</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -881,7 +463,7 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Общая площадь земельных участков, кв.м.</span>
+                  <span class="filters__label-text">Доступность для сторонних посетителей</span>
                 </label>
               </li>
               <li class="filters__item">
@@ -894,50 +476,100 @@
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text">Статус актуализации</span>
+                  <span class="filters__label-text">Приспособленность для инвалидов</span>
                 </label>
               </li>
-            </ul>
-          </div>
-        </div>
-        <div class="accordion accordion--opened filters__accordion">
-          <div class="accordion__button accordion__button--actived filters__accordion-button">
-            <label class="filters__label">
-              <input
-                type="checkbox"
-                name="checkbox-accordion-02"
-                class="filters__checkbox"
-              />
-              <span
-                class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
-              ></span>
-              <span class="accordion__button-text">Ремонт</span>
-            </label>
-            <button
-              type="button"
-              class="accordion__button-icon filters__accordion-button-icon icon-button icon icon--type-arrow-down"
-              onclick="toggleAccordion(this)"
-              aria-label="Развернуть"
-            ></button>
-          </div>
-          <div class="accordion__section filters__accordion-section">
-            <ul class="filters__list">
               <li class="filters__item">
                 <label class="filters__label">
                   <input
                     type="checkbox"
-                    name="checkbox-01"
+                    name="checkbox-0"
                     class="filters__checkbox"
                   />
                   <span
                     class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
                   ></span>
-                  <span class="filters__label-text"
-                    >Сведения о ремонтах</span
-                  >
+                  <span class="filters__label-text">Количество подъемников</span>
                 </label>
               </li>
-
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Количество подъемников</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип спортивной зоны в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Длина в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Ширина в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Тип покрытия спортивной зоны в зимний период</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__label">
+                  <input
+                    type="checkbox"
+                    name="checkbox-0"
+                    class="filters__checkbox"
+                  />
+                  <span
+                    class="filters__pseudo-checkbox icon icon--type-checkbox-in-box"
+                  ></span>
+                  <span class="filters__label-text">Требуется актуализация</span>
+                </label>
+              </li>
             </ul>
           </div>
         </div>

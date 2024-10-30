@@ -63,4 +63,9 @@
       }
     }
   }
+
+  &__divider {
+    border: none;
+    border-block-end: 2px solid var(--border-color, #d9d9d9);
+  }
 }

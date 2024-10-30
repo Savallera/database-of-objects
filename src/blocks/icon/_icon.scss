@@ -60,6 +60,9 @@
   &--type-info-rectangle::before {
     mask-image: url('../images/icons.svg#info-rectangle');
   }
+  &--type-info::before {
+    mask-image: url('../images/icons.svg#info');
+  }
   &--type-location-in-map::before {
     mask-image: url('../images/icons.svg#location-in-map');
   }
